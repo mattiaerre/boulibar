@@ -41,7 +41,5 @@
     "url": "https://github.com/mattiaerre/boulibar/issues"
   },
   "homepage": "https://github.com/mattiaerre/boulibar#readme",
-  "post-commit": [
-    "version:patch"
-  ]
+  "post-commit": []
 }
