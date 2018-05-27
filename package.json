@@ -1,6 +1,6 @@
 {
   "name": "boulibar",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "private": true,
   "scripts": {
     "bump:patch": "npm version patch",
@@ -39,5 +39,7 @@
     "url": "https://github.com/mattiaerre/boulibar/issues"
   },
   "homepage": "https://github.com/mattiaerre/boulibar#readme",
-  "post-commit": ["bump:patch"]
+  "post-commit": [
+    "bump:patch"
+  ]
 }
