@@ -1,4 +1,5 @@
 const cookieParser = require('cookie-parser');
+require('dotenv').config();
 const express = require('express');
 const favicon = require('express-favicon-short-circuit');
 const createError = require('http-errors');
@@ -20,8 +21,8 @@ app.use(cookieParser());
 
 app.use(
   sassMiddleware({
-    src: path.join(__dirname, 'public'),
-    dest: path.join(__dirname, 'public'),
+    src: path.join(__dirname, 'scss'),
+    dest: path.join(__dirname, 'scss'),
     debug: true,
     outputStyle: 'compressed',
     indentedSyntax: false,
@@ -29,8 +30,8 @@ app.use(
   })
 );
 
-app.use(express.static(path.join(__dirname, '../node_modules')));
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'scss')));
 
 app.use('/', index);
 
