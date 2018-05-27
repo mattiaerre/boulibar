@@ -19,16 +19,18 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
-app.use(
-  sassMiddleware({
-    src: path.join(__dirname, 'scss'),
-    dest: path.join(__dirname, 'scss'),
-    debug: true,
-    outputStyle: 'compressed',
-    indentedSyntax: false,
-    sourceMap: true
-  })
-);
+if (process.env.PROD !== 'true') {
+  app.use(
+    sassMiddleware({
+      src: path.join(__dirname, 'scss'),
+      dest: path.join(__dirname, 'scss'),
+      debug: true,
+      outputStyle: 'compressed',
+      indentedSyntax: false,
+      sourceMap: true
+    })
+  );
+}
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'scss')));
