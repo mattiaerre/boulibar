@@ -3,9 +3,9 @@
   "version": "0.0.5",
   "private": true,
   "scripts": {
-    "bump:patch": "npm version patch",
     "start": "node ./src/bin/www",
-    "start:dev": "DEBUG=boulibar:* nodemon ./src/bin/www"
+    "start:dev": "DEBUG=boulibar:* nodemon ./src/bin/www",
+    "version:patch": "npm version patch"
   },
   "dependencies": {
     "bulma": "^0.7.1",
@@ -39,7 +39,5 @@
     "url": "https://github.com/mattiaerre/boulibar/issues"
   },
   "homepage": "https://github.com/mattiaerre/boulibar#readme",
-  "post-commit": [
-    "bump:patch"
-  ]
+  "post-commit": ["version:patch"]
 }
