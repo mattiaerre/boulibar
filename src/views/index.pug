@@ -1,11 +1,10 @@
 extends layout
 
 block content
-  section.section
-    .container
-      h1.title= `${name} v${version}`
-      .columns
-        .column 1st column
-        .column 2nd column
-        .column 3rd column
-        .column 4th column
+  section.hero.is-light.is-fullheight
+    .hero-head
+    .hero-body
+      .container
+        h1.title= name
+        h2.subtitle= `v${version}`
+    .hero-foot

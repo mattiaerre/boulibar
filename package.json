@@ -3,6 +3,7 @@
   "version": "0.0.4",
   "private": true,
   "scripts": {
+    "bump:patch": "npm version patch",
     "start": "node ./src/bin/www",
     "start:dev": "DEBUG=boulibar:* nodemon ./src/bin/www"
   },
@@ -24,7 +25,8 @@
     "eslint-plugin-import": "^2.12.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.8.2",
-    "nodemon": "^1.17.5"
+    "nodemon": "^1.17.5",
+    "post-commit": "0.0.1"
   },
   "repository": {
     "type": "git",
@@ -36,5 +38,6 @@
   "bugs": {
     "url": "https://github.com/mattiaerre/boulibar/issues"
   },
-  "homepage": "https://github.com/mattiaerre/boulibar#readme"
+  "homepage": "https://github.com/mattiaerre/boulibar#readme",
+  "post-commit": ["bump:patch"]
 }
