@@ -2,6 +2,8 @@
   "extends": "airbnb",
   "rules": {
     "arrow-parens": "off",
+    "comma-dangle": "off",
+    "function-paren-newline": "off",
     "sort-imports": "error"
   }
 }

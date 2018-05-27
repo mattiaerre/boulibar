@@ -3,6 +3,7 @@ const express = require('express');
 const favicon = require('express-favicon-short-circuit');
 const createError = require('http-errors');
 const logger = require('morgan');
+const sassMiddleware = require('node-sass-middleware');
 const path = require('path');
 const index = require('./routes/index');
 
@@ -16,7 +17,18 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-// /Users/mrichetto/projects/boulibar/node_modules/bulma/css/bulma.css
+
+app.use(
+  sassMiddleware({
+    src: path.join(__dirname, 'public'),
+    dest: path.join(__dirname, 'public'),
+    debug: true,
+    outputStyle: 'compressed',
+    indentedSyntax: false,
+    sourceMap: true
+  })
+);
+
 app.use(express.static(path.join(__dirname, '../node_modules')));
 app.use(express.static(path.join(__dirname, 'public')));
 

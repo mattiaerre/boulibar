@@ -15,6 +15,7 @@
     "express-favicon-short-circuit": "^1.1.1",
     "http-errors": "~1.6.2",
     "morgan": "~1.9.0",
+    "node-sass-middleware": "^0.11.0",
     "pug": "2.0.0-beta11"
   },
   "description": "",
@@ -39,5 +40,7 @@
     "url": "https://github.com/mattiaerre/boulibar/issues"
   },
   "homepage": "https://github.com/mattiaerre/boulibar#readme",
-  "post-commit": ["version:patch"]
+  "post-commit": [
+    "version:patch"
+  ]
 }
