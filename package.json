@@ -1,6 +1,6 @@
 {
   "name": "boulibar",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "private": true,
   "scripts": {
     "copy:styles": "cp src/scss/*.css src/public/stylesheets && cp src/scss/*.css.map src/public/stylesheets",
