@@ -1,5 +1,11 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  section.section
+    .container
+      h1.title= `${name} v${version}`
+      .columns
+        .column 1st column
+        .column 2nd column
+        .column 3rd column
+        .column 4th column

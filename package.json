@@ -1,15 +1,17 @@
 {
   "name": "boulibar",
-  "version": "0.0.0",
+  "version": "0.0.4",
   "private": true,
   "scripts": {
     "start": "node ./src/bin/www",
     "start:dev": "DEBUG=boulibar:* nodemon ./src/bin/www"
   },
   "dependencies": {
+    "bulma": "^0.7.1",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
     "express": "~4.16.0",
+    "express-favicon-short-circuit": "^1.1.1",
     "http-errors": "~1.6.2",
     "morgan": "~1.9.0",
     "pug": "2.0.0-beta11"
@@ -21,7 +23,8 @@
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.12.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
-    "eslint-plugin-react": "^7.8.2"
+    "eslint-plugin-react": "^7.8.2",
+    "nodemon": "^1.17.5"
   },
   "repository": {
     "type": "git",
