@@ -5,10 +5,10 @@
 // $white-ter: #eedd82;
 
 a.navbar-burger {
-  color: white;
+  color: #f5f5f5;
 
   &:hover {
-    color: white;
+    color: #f5f5f5;
   }
 }
 
@@ -17,6 +17,14 @@ footer {
 
   .content {
     padding: 2rem;
+  }
+}
+
+.hero-head {
+  figure {
+    img {
+      padding: 0 1rem !important;
+    }
   }
 }
 
