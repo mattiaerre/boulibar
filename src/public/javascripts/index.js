@@ -10,11 +10,11 @@ function addResizeOnWindow(handler) {
 }
 
 function addTriangleAboveHeroImage() {
-  const { clientWidth } = document.body;
+  const { width } = window.screen;
   const image = document.getElementById('hero-image');
   const triangle = {
-    height: clientWidth / 6,
-    width: clientWidth
+    height: width / 6,
+    width
   };
   const sheet = document.styleSheets[0];
   sheet.insertRule(
