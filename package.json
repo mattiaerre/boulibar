@@ -3,7 +3,8 @@
   "version": "0.0.10",
   "private": true,
   "scripts": {
-    "copy:styles": "cp src/scss/*.css src/public/stylesheets && cp src/scss/*.css.map src/public/stylesheets",
+    "copy:styles":
+      "cp src/scss/*.css src/public/stylesheets && cp src/scss/*.css.map src/public/stylesheets",
     "start": "node ./src/bin/www",
     "start:dev": "DEBUG=boulibar:* nodemon ./src/bin/www",
     "version:patch": "npm version patch"
@@ -29,7 +30,8 @@
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.8.2",
     "nodemon": "^1.17.5",
-    "post-commit": "0.0.1"
+    "post-commit": "0.0.1",
+    "pre-commit": "^1.2.2"
   },
   "repository": {
     "type": "git",
@@ -42,5 +44,6 @@
     "url": "https://github.com/mattiaerre/boulibar/issues"
   },
   "homepage": "https://github.com/mattiaerre/boulibar#readme",
-  "post-commit": []
+  "post-commit": [],
+  "pre-commit": ["copy:styles"]
 }
