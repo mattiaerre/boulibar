@@ -6,6 +6,8 @@ block content
       .content
         p.has-text-centered
           a.button.has-text-weight-bold.is-large.is-primary(href="/quote")= copy['quote']
+        p.has-text-centered
+          a.button.has-text-weight-bold.is-large(href="https://www.google.com" target="_blank")= copy['upload']
         h1.is-uppercase.title= copy[path]
         p= copy['lorem-ipsum']
         blockquote= page.info
