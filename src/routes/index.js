@@ -12,7 +12,6 @@ function handler(req, res, page) {
     copy,
     name,
     page,
-    path: req.path.substring(1) || 'home',
     stylesheet,
     version
   };
@@ -24,7 +23,9 @@ Object.keys(siteMap)
   .map(key => siteMap[key])
   .filter(page => page.v1 === true)
   .forEach(page => {
-    router.get(page.path, (req, res) => handler(req, res, page));
+    router.get(`/${page.path}`, (req, res) =>
+      handler(req, res, Object.assign({}, page, { key: page.path || 'home' }))
+    );
   });
 
 module.exports = router;

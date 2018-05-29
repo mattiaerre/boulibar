@@ -1,13 +1,13 @@
 extends layout
 
 block content
-  section.hero
-    .hero-body
+  if page.sections.includes('quote')
+    include quote
+  if page.sections.includes('upload')
+    include upload
+  .section
+    .container
       .content
-        p.has-text-centered
-          a.button.has-text-weight-bold.is-large.is-primary(href="/quote")= copy['quote']
-        p.has-text-centered
-          a.button.has-text-weight-bold.is-large(href="https://www.google.com" target="_blank")= copy['upload']
-        h1.is-uppercase.title= copy[path]
+        h1.is-uppercase.title= copy[page.key]
         p= copy['lorem-ipsum']
         blockquote= page.info

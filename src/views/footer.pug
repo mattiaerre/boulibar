@@ -1,9 +1,11 @@
-footer.footer
-  ul
-    li
-      a(href="/payment")= copy['payment']
-    li
-      a(href="/quote")= copy['quote']
-    li
-      a(href="/contact")= copy['contact']
-  .has-text-centered.is-size-7= `${name} v${version}`
+.section
+  .container
+    .columns
+      .column.has-text-centered
+        a(href="/payment")= copy['payment']
+      .column.has-text-centered
+        a(href="/quote")= copy['quote']
+      .column.has-text-centered
+        a(href="/contact")= copy['contact']
+    .columns
+      .column.has-text-centered.is-size-7= `${name} v${version}`

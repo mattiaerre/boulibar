@@ -1,42 +1,48 @@
 {
   "about": {
     "info": "Static page",
-    "path": "/about",
+    "path": "about",
+    "sections": [],
     "v1": true
   },
   "contact": {
     "info": "Phone, email and message (sends an email)",
-    "path": "/contact",
+    "path": "contact",
+    "sections": [],
     "v1": true
   },
   "format": {
     "info": "Static page",
-    "path": "/format",
+    "path": "format",
+    "sections": [],
     "v1": true
   },
   "home": {
     "info": "The home page (static content)",
-    "path": "/",
+    "path": "",
+    "sections": ["quote", "upload"],
     "v1": true
   },
   "payment": {
     "info": "Page w/ payment form (posts to PayPal)",
-    "path": "/payment",
+    "path": "payment",
+    "sections": [],
     "v1": true
   },
   "quote": {
     "info": "Page w/ order form (sends an email)",
-    "path": "/quote",
+    "path": "quote",
+    "sections": [],
     "v1": true
   },
   "services": {
     "info":
       "Page that contains: closed caption, translations and editing (static content)",
-    "path": "/services",
+    "path": "services",
+    "sections": [],
     "v1": true
   },
   "rates": {
-    "path": "/rates",
     "v1": false
   }
 }

@@ -1,4 +1,4 @@
-nav.navbar
+.navbar.is-fixed-top
   .navbar-brand
     a.navbar-item(href="/")
       | &nbsp;
@@ -7,12 +7,11 @@ nav.navbar
       span.is-uppercase.has-text-weight-bold= copy['on']
       | &nbsp;
       span.is-uppercase.has-text-weight-bold= copy['productions']
-    .burger.navbar-burger(data-target="_menu")
+    .burger.navbar-burger(data-target="navbar-menu")
       span(aria-hidden="true")
       span(aria-hidden="true")
       span(aria-hidden="true")
-  #_menu.navbar-menu
+  #navbar-menu.navbar-menu
     .navbar-start
-      a.navbar-item(href="/about")= copy['about']
-      a.navbar-item(href="/format")= copy['format']
-      a.navbar-item(href="/services")= copy['services']
+      each key in ['about', 'format', 'services']
+        a.navbar-item(href=`/${key}` class=`${page.path === key ? 'is-active' : ''}`)= copy[key]

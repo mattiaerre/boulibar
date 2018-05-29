@@ -6,7 +6,7 @@ html(lang="en")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     title= `${copy['moving-on-productions']} v${version}`
     link(rel='stylesheet', href=`${stylesheet}/styles.css`)
-  body
+  body.has-navbar-fixed-top
     include navbar
     block content
     include footer
