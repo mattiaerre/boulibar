@@ -1,10 +1,18 @@
-nav(aria-label="main navigation" class="navbar is-dark" role="navigation")
+nav.navbar
   .navbar-brand
     a.navbar-item(href="/")
-      // http://placeholder.pics/
-      img(alt="TODO" height="" src="http://placeholder.pics/svg/28x28/f5f5f5/363636" width="")
-      span= `${name}`
-    a.navbar-burger(aria-label="menu" aria-expanded="false" role="button")
+      | &nbsp;
+      span.is-uppercase= copy['moving']
+      | &nbsp;
+      span.is-uppercase.has-text-weight-bold= copy['on']
+      | &nbsp;
+      span.is-uppercase.has-text-weight-bold= copy['productions']
+    .burger.navbar-burger(data-target="_menu")
       span(aria-hidden="true")
       span(aria-hidden="true")
       span(aria-hidden="true")
+  #_menu.navbar-menu
+    .navbar-start
+      a.navbar-item(href="/about")= copy['about']
+      a.navbar-item(href="/format")= copy['format']
+      a.navbar-item(href="/services")= copy['services']

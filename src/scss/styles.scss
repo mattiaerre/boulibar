@@ -1,38 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Merriweather');
-
+// @import url('https://fonts.googleapis.com/css?family=Merriweather');
 // $family-serif: 'Merriweather', serif;
 // $family-primary: $family-serif;
-// $white-ter: #eedd82;
-
-a.navbar-burger {
-  color: #f5f5f5;
-
-  &:hover {
-    color: #f5f5f5;
-  }
-}
-
-footer {
-  padding: 1rem 1rem 0 1rem !important;
-
-  .content {
-    padding: 2rem;
-  }
-}
-
-.hero-head {
-  figure {
-    img {
-      padding: 0 1rem !important;
-    }
-  }
-}
-
-.hero-foot {
-  hr {
-    height: 0.25rem;
-    margin: 0 1rem 0.5rem !important;
-  }
-}
 
 @import '../../node_modules/bulma/bulma.sass';

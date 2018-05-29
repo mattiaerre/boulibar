@@ -1,14 +1,11 @@
 extends layout
 
 block content
-  section.hero.is-dark
-    .hero-head
-      figure.image.is-1by1
-        img#hero-image(alt="TODO" height="" src="http://placeholder.pics/svg/320x320/f5f5f5/f5f5f5/img" width="")
-        .hero-image
+  section.hero
     .hero-body
-      .container
-        h1.title= name
-        h2.subtitle= copy['lorem-ipsum']
-    .hero-foot
-      hr.has-background-grey-light
+      .content
+        p.has-text-centered
+          a.button.has-text-weight-bold.is-large.is-primary(href="/quote")= copy['quote']
+        h1.is-uppercase.title= copy[path]
+        p= copy['lorem-ipsum']
+        blockquote= page.info

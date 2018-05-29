@@ -1,3 +1,9 @@
-footer.footer.has-background-dark
-  .container.has-background-light
-    .content.has-text-centered= `${name} v${version}`
+footer.footer
+  ul
+    li
+      a(href="/payment")= copy['payment']
+    li
+      a(href="/quote")= copy['quote']
+    li
+      a(href="/contact")= copy['contact']
+  .has-text-centered.is-size-7= `${name} v${version}`
