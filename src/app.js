@@ -6,6 +6,7 @@ const createError = require('http-errors');
 const logger = require('morgan');
 const sassMiddleware = require('node-sass-middleware');
 const path = require('path');
+const { name, version } = require('../package.json');
 const index = require('./routes/index');
 
 const app = express();
@@ -32,10 +33,26 @@ if (process.env.PROD !== 'true') {
   );
 }
 
+if (app.get('env') === 'development') {
+  app.locals.pretty = true;
+}
+
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'scss')));
 
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header(
+    'Access-Control-Allow-Headers',
+    'Origin, X-Requested-With, Content-Type, Accept'
+  );
+  next();
+});
+
 app.use('/', index);
+app.use('/submit', (req, res) => {
+  res.json({ message: `OK from ${name} v${version}` });
+});
 
 app.use((req, res, next) => {
   next(createError(404));

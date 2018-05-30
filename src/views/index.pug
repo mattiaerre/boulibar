@@ -11,3 +11,11 @@ block content
         h1.is-uppercase.title= copy[page.key]
         p= copy['lorem-ipsum']
         blockquote= page.info
+  .section
+    .container
+      .content
+        script.
+          window.__MODEL__ = !{JSON.stringify(locals)};
+        #root
+        script(src="javascripts/main." + appBuildId + ".js")
+        // script(src="http://localhost:3000/static/js/bundle.js")

@@ -9,6 +9,7 @@ const router = express.Router();
 function handler(req, res, page) {
   const stylesheet = `${process.env.PROD === 'true' ? 'stylesheets' : ''}`;
   const model = {
+    appBuildId: process.env.APP_BUILD_ID,
     copy,
     name,
     page,

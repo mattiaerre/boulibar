@@ -3,9 +3,12 @@
   "version": "0.0.15",
   "private": true,
   "scripts": {
-    "copy:styles": "cp src/scss/*.css src/public/stylesheets && cp src/scss/*.css.map src/public/stylesheets",
+    "copy:bundle":
+      "cp ../boulibar-app/build/static/js/*.* src/public/javascripts",
+    "copy:styles":
+      "cp src/scss/*.css src/public/stylesheets && cp src/scss/*.css.map src/public/stylesheets",
     "start": "node ./src/bin/www",
-    "start:dev": "DEBUG=boulibar:* nodemon ./src/bin/www",
+    "start:dev": "DEBUG=boulibar:* PORT=9000 nodemon ./src/bin/www",
     "version:patch": "npm version patch"
   },
   "dependencies": {
@@ -44,7 +47,5 @@
   },
   "homepage": "https://github.com/mattiaerre/boulibar#readme",
   "post-commit": [],
-  "pre-commit": [
-    "copy:styles"
-  ]
+  "pre-commit": ["copy:styles"]
 }
