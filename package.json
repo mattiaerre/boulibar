@@ -1,6 +1,6 @@
 {
   "name": "boulibar",
-  "version": "0.0.16",
+  "version": "1.0.0-alpha.1",
   "private": true,
   "scripts": {
     "copy:bundle": "cp ../boulibar-app/build/static/js/*.* src/public/javascripts",
