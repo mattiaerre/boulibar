@@ -6,8 +6,8 @@ const createError = require('http-errors');
 const logger = require('morgan');
 const sassMiddleware = require('node-sass-middleware');
 const path = require('path');
-const { name, version } = require('../package.json');
 const index = require('./routes/index');
+const submit = require('./routes/submit');
 
 const app = express();
 
@@ -50,9 +50,7 @@ app.use((req, res, next) => {
 });
 
 app.use('/', index);
-app.use('/submit', (req, res) => {
-  res.json({ message: `OK from ${name} v${version}` });
-});
+app.use('/submit', submit);
 
 app.use((req, res, next) => {
   next(createError(404));
