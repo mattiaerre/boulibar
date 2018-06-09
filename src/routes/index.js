@@ -13,6 +13,7 @@ function handler(req, res, page) {
     name,
     page,
     stylesheet,
+    trackingId: process.env.TRACKING_ID,
     version
   };
   debug(model);
