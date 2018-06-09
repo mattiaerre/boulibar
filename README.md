@@ -1,9 +1,17 @@
 # boulibar
 
+boulibar
+
 ## Todos
 
-* Social widget
+- [ ] Social widget
 
-* Contact us by message form
+- [x] Contact us by message form
 
-* Quote form
+- [ ] Quote form
+
+## Steps
+
+- `npm run copy:bundle`
+
+- `npm run copy:styles`
