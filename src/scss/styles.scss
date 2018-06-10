@@ -1,10 +1,18 @@
 // /Users/mrichetto/projects/boulibar/node_modules/bulma/sass/utilities/initial-variables.sass
 
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
 $family-sans-serif: 'Source Sans Pro', sans-serif;
-$grey-darker: #f2efe6; // heading
+$grey-darker: #80e2de; // heading
 $grey-dark: #ffffff; // normal text
 $white-ter: #f2efe6; // blockquote
 $white: #343332; // background
+
+$family-serif: 'Playfair Display', serif;
+
+.is-serif {
+  font-family: $family-serif;
+}
 
 @import '../../node_modules/bulma/bulma.sass';
