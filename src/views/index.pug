@@ -16,6 +16,11 @@ block content
       .content
         script.
           window.__MODEL__ = !{JSON.stringify(locals)};
-        #root
-        script(src="javascripts/main.js")
-        // script(src="http://localhost:3000/static/js/bundle.js")
+        case page.key
+          when 'contact'
+          when 'quote'
+            #root
+            script(src="javascripts/main.js")
+            // script(src="http://localhost:3000/static/js/bundle.js")
+          when 'payment'
+            include paypal
