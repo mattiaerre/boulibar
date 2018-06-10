@@ -1,5 +1,10 @@
-// @import url('https://fonts.googleapis.com/css?family=Merriweather');
-// $family-serif: 'Merriweather', serif;
-// $family-primary: $family-serif;
+// /Users/mrichetto/projects/boulibar/node_modules/bulma/sass/utilities/initial-variables.sass
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+$family-sans-serif: 'Source Sans Pro', sans-serif;
+$grey-darker: #f2efe6; // heading
+$grey-dark: #ffffff; // normal text
+$white-ter: #f2efe6; // blockquote
+$white: #343332; // background
 
 @import '../../node_modules/bulma/bulma.sass';
