@@ -11,8 +11,16 @@ $white: #343332; // background
 
 $family-serif: 'Playfair Display', serif;
 
+.content figure {
+  margin: 0 !important;
+}
+
 .is-serif {
   font-family: $family-serif;
+}
+
+.section {
+  padding: 0 1.5rem 3rem 1.5rem !important;
 }
 
 @import '../../node_modules/bulma/bulma.sass';

@@ -20,7 +20,7 @@
   "home": {
     "info": "The home page (static content)",
     "path": "",
-    "sections": ["quote", "upload"],
+    "sections": [],
     "v1": true
   },
   "payment": {
