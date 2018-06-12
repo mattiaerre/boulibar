@@ -19,8 +19,16 @@ $family-serif: 'Playfair Display', serif;
   font-family: $family-serif;
 }
 
+.navbar-item img {
+  max-height: none !important;
+}
+
 .section {
   padding: 0 1.5rem 3rem 1.5rem !important;
+}
+
+.spacer {
+  padding: 0.25rem !important;
 }
 
 @import '../../node_modules/bulma/bulma.sass';
