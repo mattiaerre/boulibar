@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  .section.spacer
+  .section
+    .container
+      .content
+        h1.is-serif.title= copy[page.key]
+        figure(className="image")
+          img(src="images/hero@2x.png")
+          .is-across-image.is-serif= copy['accurate-affordable-transcription']
+        p.is-goldish.is-serif= copy['home-content-1']
+  .section
+    .container
+      .content
+        h2.is-serif.title= copy['turnaround-time']
+        p= copy['home-content-2']
+  .section
+    .container
+      .content
+        h2.is-serif.title= copy['translations-captioning-and-copy-editing']
+        p= copy['home-content-3']

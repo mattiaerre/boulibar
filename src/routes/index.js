@@ -7,6 +7,15 @@ const siteMap = require('./site-map.json');
 const router = express.Router();
 
 function handler(req, res, page) {
+  let view = 'index';
+  switch (page.key) {
+    case 'home':
+      view = 'home';
+      break;
+    default:
+      break;
+  }
+
   const stylesheet = `${process.env.PROD === 'true' ? 'stylesheets' : ''}`;
   const model = {
     copy,
@@ -17,7 +26,7 @@ function handler(req, res, page) {
     version
   };
   debug(model);
-  res.render('index', model);
+  res.render(view, model);
 }
 
 Object.keys(siteMap)
