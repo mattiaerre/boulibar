@@ -1,5 +1,11 @@
 {
   "about": "About",
+  "about-content-1":
+    "For over ten years Moving On Transcription has provided accurate, quality transcripts at an extremely affordable rate. Because our founder started out in film and television production, we speak the post-production language and we understand the need for quick turnarounds as well as verbatim accuracy.",
+  "about-content-2":
+    "We pride ourselves on ensuring that our client gets exactly what they need, without increasing our rates. Whether it's closed captioning, translation or transcription, we customize to fit our clients needs.",
+  "about-content-3":
+    "We are based in NYC but we can accommodate any time zone, all over the world. We are a New York State MWBE certified business.",
   "accurate-affordable-transcription": "Accurate Affordable Transcription",
   "audio-quality": "Audio quality",
   "clean": "Clean",
@@ -12,6 +18,11 @@
   "email-placeholder": "e.g. john.doe@email.com",
   "employment": "Employment",
   "format": "Format",
+  "format-content-1":
+    "If you have audio, in any format, we can transcribe it for you. We'll take archaic technology off your hands and turn it into the written word. Need an audio cassette transcribed? Believe it or not, we can do that! We accept all forms of Wav, MP3 and MP4 files. We'll take any digital video format as well. We provide immediate upload through this site.",
+  "format-content-2":
+    "What do you want your transcript to look like? You tell us. We offer our clients full customization including time code placed at the frequency you require. Whether you need the transcript clean or verbatim and the copy being as broadcast or script style. Let us know the format of the final transcript that you prefer and we'll make it happen.",
+  "from-audio-to-script": "From Audio to Script",
   "home": "Home",
   "home-content-1":
     "There are some things that still have to be done the old-fashioned way, and transcription is one of those. Although we can use new technologies to streamline the process; to do it right, and most accurately, it’s all about the human ear and eye. That’s why you need us, to automate the process for you. We'll help move your project on ... from audio to the page. Whether it's an academic report, a magazine article, a reality TV show, or a focus group. We'll use antique methods so you don't have to.",
@@ -19,6 +30,8 @@
     "We understand that on any project, deadlines are important. That's why we offer extremely low rush rates. We can also offer an expedited rate with the fastest turnaround of just double the time. Give us an hour, we'll have it transcribed and back to you in 3. Place an order now for your rush project.",
   "home-content-3":
     "We offer services beyond transcription and can help you complete your project with subtitles, translations and even copy editing.",
+  "learn-more": "Learn more",
+  "learn-more-about-our-services": "Learn more about our services",
   "length-of-project": "Length of Project",
   "length-of-project-hours-placeholder": "hh",
   "length-of-project-minutes-placeholder": "mm",
@@ -47,6 +60,7 @@
   "thanks-for-filling-out-contact-form":
     "Thanks for filling out our contact form!",
   "thanks-for-filling-out-quote-form": "Thanks for filling out our quote form!",
+  "the-written-word": "The Written Word",
   "time-coded": "Time-coded",
   "todo": "TODO",
   "translations-captioning-and-copy-editing":

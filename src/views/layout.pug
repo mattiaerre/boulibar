@@ -9,6 +9,8 @@ html(lang="en")
       }
       gtag('js', new Date());
       gtag('config', '#{trackingId}');
+    script.
+      window.__MODEL__ = !{JSON.stringify(locals)};
     if page.key === 'payment' 
       script(src="https://www.paypalobjects.com/api/checkout.js")
     meta(charset="UTF-8")

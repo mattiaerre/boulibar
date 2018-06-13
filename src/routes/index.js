@@ -9,8 +9,14 @@ const router = express.Router();
 function handler(req, res, page) {
   let view = 'index';
   switch (page.key) {
+    case 'about':
+      view = 'pages/about';
+      break;
+    case 'format':
+      view = 'pages/format';
+      break;
     case 'home':
-      view = 'home';
+      view = 'pages/home';
       break;
     default:
       break;
