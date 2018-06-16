@@ -19,7 +19,7 @@ html(lang="en")
     title= `${copy['moving-on-productions']} v${version}`
     link(rel='stylesheet', href=`${stylesheet}/styles.css`)
   body.has-navbar-fixed-top
-    include navbar
+    include components/navbar
     block content
-    include footer
+    include components/footer
     script(src="javascripts/index.js")
