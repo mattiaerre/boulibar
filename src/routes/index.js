@@ -6,24 +6,16 @@ const siteMap = require('./site-map.json');
 
 const router = express.Router();
 
-function handler(req, res, page) {
-  let view = 'index';
-  switch (page.key) {
-    case 'about':
-      view = 'pages/about';
-      break;
-    case 'format':
-      view = 'pages/format';
-      break;
-    case 'home':
-      view = 'pages/home';
-      break;
-    default:
-      break;
-  }
+function appPath() {
+  return process.env.PROD === 'true'
+    ? 'javascripts/main.js'
+    : process.env.APP_PATH;
+}
 
+function handler(req, res, page) {
   const stylesheet = `${process.env.PROD === 'true' ? 'stylesheets' : ''}`;
   const model = {
+    appPath: appPath(),
     copy,
     name,
     page,
@@ -32,12 +24,11 @@ function handler(req, res, page) {
     version
   };
   debug(model);
-  res.render(view, model);
+  res.render(`pages/${page.key}`, model);
 }
 
 Object.keys(siteMap)
   .map(key => siteMap[key])
-  .filter(page => page.v1 === true)
   .forEach(page => {
     router.get(`/${page.path}`, (req, res) =>
       handler(req, res, Object.assign({}, page, { key: page.path || 'home' }))
