@@ -5,11 +5,10 @@ block content
     include cta/quote
   if page.sections.includes('upload')
     include cta/upload
-  .section.spacer
   .section
     .container
       .content
-        h1.is-serif.title= copy[page.key]
+        h1= copy[page.key]
         blockquote.has-text-black= page.info
   .section
     .container

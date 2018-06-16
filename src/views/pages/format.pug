@@ -1,21 +1,20 @@
 extends ../layout
 
 block content
-  .section.spacer
   .section
     .container
       .content
-        h1.is-serif.title= copy[page.key]
+        h1= copy[page.key]
   .section
     .container
       .content
-        h2.is-serif.title= copy['from-audio-to-script']
+        h2= copy['from-audio-to-script']
         p= copy['format-content-1']
   include ../cta/upload
   .section
     .container
       .content
-        h2.is-serif.title= copy['the-written-word']
+        h2= copy['the-written-word']
         p= copy['format-content-2']
   .section
     .container
