@@ -8,6 +8,7 @@ $family-sans-serif: 'Source Sans Pro', sans-serif;
 
 // colors
 $charcoalGrey: #2d343a;
+$darkTaupe: #726442;
 $lightGrey: #f2efe6;
 $putty: #bcb38e;
 $seafoamBlue: #74b3ce;
@@ -24,6 +25,22 @@ h2 {
 footer {
   background-color: $lightGrey;
   margin: 1rem 1rem 0 1rem;
+
+  i {
+    color: $darkTaupe;
+  }
+
+  li {
+    border: 1px solid $darkTaupe;
+    border-radius: 50%;
+    padding: 0.45rem;
+  }
+
+  .social {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 0;
+  }
 }
 
 .button {
@@ -34,12 +51,12 @@ footer {
   }
 }
 
-.is-putty {
-  color: $putty;
-}
-
 .is-charcoal-grey {
   color: $charcoalGrey;
+}
+
+.is-putty {
+  color: $putty;
 }
 
 .is-serif {
