@@ -1,11 +1,13 @@
 {
   "about": "About",
   "about-content-1":
-    "For over ten years Moving On Transcription has provided accurate, quality transcripts at an extremely affordable rate. Because our founder started out in film and television production, we speak the post-production language and we understand the need for quick turnarounds as well as verbatim accuracy.",
+    "For over 10 years Moving On Productions has provided accurate, quality post-production sub-titles and translations for non-scripted film and television. We provide transcription from video or audio files to typewritten documents for documentary filmmakers, journalists, authors and reality TV producers. We also work with marketing companies and will transcribe material from focus groups.",
   "about-content-2":
-    "We pride ourselves on ensuring that our client gets exactly what they need, without increasing our rates. Whether it's closed captioning, translation or transcription, we customize to fit our clients needs.",
+    "We have worked with clients including; Food Network, MTV, Refinery 29 and National Geographic. We are also proud to have worked with Netflix and the team that produced Icarus, which was awarded the 2018 Academy Award for documentary film.",
   "about-content-3":
-    "We are based in NYC but we can accommodate any time zone, all over the world. We are a New York State MWBE certified business.",
+    "Our clients matter to us, and we always work hard to ensure that they have what they need, when they need it. Because of this, we are willing to customize formats to the exact specifications of each project. We also have depth of knowledge of the industry as our team includes several people who have worked in television production. With this unique insight into every step of the production process, we know exactly what our clients require. We know fast turnaround is a major priority, so we are deadline driven and accommodate confidentially through non-disclosure agreements.",
+  "about-content-4":
+    "We are based in New York City and Los Angeles, but we can accommodate any time zone, all over the world. We are also a New York State WBE certified business and support other minority/women owned small businesses. We'd love to work with you on your next project. Place an order here and we can get started.",
   "accurate-affordable-transcription": "Accurate Affordable Transcription",
   "audio-quality": "Audio quality",
   "clean": "Clean",
@@ -30,12 +32,18 @@
     "We understand that on any project, deadlines are important. That's why we offer extremely low rush rates. We can also offer an expedited rate with the fastest turnaround of just double the time. Give us an hour, we'll have it transcribed and back to you in 3. Place an order now for your rush project.",
   "home-content-3":
     "We offer services beyond transcription and can help you complete your project with subtitles, translations and even copy editing.",
-  "learn-more": "Learn more",
+  "learn-more": "Learn More &rarr;",
   "learn-more-about-our-services": "Learn more about our services",
   "length-of-project": "Length of Project",
   "length-of-project-hours-placeholder": "hh",
   "length-of-project-minutes-placeholder": "mm",
   "length-of-project-seconds-placeholder": "ss",
+  "lisa-smith-founder": "Lisa Smith - Founder",
+  "lisa-smith-founder-text":
+    "Lisa Smith worked for years in the fields of journalism and television productions including CBS Newspath, Extra TV and Columbia University Graduate School of Journalism. She has also worked in independent film production as a line producer and production coordinator. Moving between New York City and Los Angeles, her love of filmmaking and writing has kept her in the industry and facilitating other authors and filmmakers to tell their story is her passion. She has an MBA and a BA degree from Columbia University in English literature.",
+  "lisa-nelson-operations-manager": "Lisa Nelson - Operations Manager",
+  "lisa-nelson-operations-manager-text":
+    "Lisa Nelson has over 20 years of experience in the transcription industry as a sales coordinator and an operations manager as well as a transcriptionist. She is incredibly detail oriented and has an eye for quality. Prior to working in the transcription industry she worked in the financial industry as an executive administrative secretary for such companies as Chase Investment services. She has a BA in music from Northern Illinois University with a electronic composition emphasis. This expertise has been incredibly helpful in the audio world of transcription where her unique skills in audio and pro-tools are heavily utilized.",
   "date-required-for-completion-placeholder": "2020/10/20",
   "time-required-for-completion-placeholder": "12:34:56",
   "lorem-ipsum":
@@ -48,6 +56,7 @@
   "name-placeholder": "e.g. John Doe",
   "no": "No",
   "on": "on",
+  "order": "Order &rarr;",
   "payment": "Payment",
   "productions": "productions",
   "quote": "Quote",

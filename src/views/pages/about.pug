@@ -7,4 +7,32 @@ block content
         h1= copy[page.key]
   .section
     .container
-      .content [TODO: content]
+      .content
+        figure(className="image is-square")
+          img(src="https://bulma.io/images/placeholders/256x256.png")
+        p= copy['about-content-1']
+        p= copy['about-content-2']
+        p= copy['about-content-3']
+        p= copy['about-content-4']
+  include ../cta/quote
+  .section
+    .container
+      .content
+        .card
+          .card-image
+            figure(class="image is-128x128")
+              img(src="https://bulma.io/images/placeholders/128x128.png" alt= copy['lisa-smith-founder'])
+          .card-content
+            .media
+              .media-content
+                p.title.is-4= copy['lisa-smith-founder']
+            .content= copy['lisa-smith-founder-text']
+        .card
+          .card-image
+            figure(class="image is-128x128")
+              img(src="https://bulma.io/images/placeholders/128x128.png" alt= copy['lisa-smith-founder'])
+          .card-content
+            .media
+              .media-content
+                p.title.is-4= copy['lisa-nelson-operations-manager']
+            .content= copy['lisa-nelson-operations-manager-text']

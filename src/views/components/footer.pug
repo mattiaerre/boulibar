@@ -5,13 +5,13 @@
         img(height="46" src="images/logo-light.svg" width="162")
     .columns
       .column.has-text-centered
-        a(href="/payment")= copy['payment']
+        a.has-text-weight-bold(href="/payment")= copy['payment']
       .column.has-text-centered
-        a(href="/quote")= copy['quote']
+        a.has-text-weight-bold(href="/quote")= copy['quote']
       .column.has-text-centered
-        a(href="/contact")= copy['contact']
+        a.has-text-weight-bold(href="/contact")= copy['contact']
     .columns
-      .columns.has-text-centered
+      .column.has-text-centered
         ul.social
           li
             span.icon.is-medium
@@ -22,5 +22,3 @@
           li
             span.icon.is-medium
               i.fab.fa-facebook-f
-    .columns
-      .column.has-text-centered.is-size-7.is-charcoal-grey= `${name} v${version}`
