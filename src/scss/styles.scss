@@ -51,10 +51,10 @@ footer {
 .button {
   border-radius: 0px !important;
   font-family: $family-serif;
-  padding: 1.75rem 1.25rem !important;
+  // padding: 1.75rem 1.25rem !important;
 
   &.is-seafoam-blue {
-    color: $seafoamBlue;
+    padding: 1.75rem 1.25rem !important;
   }
 }
 
@@ -66,6 +66,10 @@ footer {
   color: $putty;
 }
 
+.is-seafoam-blue {
+  color: $seafoamBlue !important;
+}
+
 .is-serif {
   font-family: $family-serif;
 }
@@ -73,6 +77,26 @@ footer {
 .navbar-item {
   img {
     max-height: none !important;
+  }
+}
+
+.hero {
+  padding: 0 !important;
+
+  .hero-body {
+    padding: 1.5rem 1.5rem 0;
+
+    .container {
+      h1 {
+        left: 0;
+        font-size: xx-large;
+        margin-left: auto;
+        margin-right: auto;
+        position: absolute;
+        right: 0;
+        top: 30%;
+      }
+    }
   }
 }
 

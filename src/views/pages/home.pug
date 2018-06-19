@@ -1,21 +1,20 @@
 extends ../layout
+include ../components/figure
 
 block content
+  .section.hero
+    .hero-body
+      .container.has-text-centered
+        +figure("/images/mobile/hero@3x.png", "/images/tablet/hero-img@3x.png", "/images/desktop/hero-img@2x.png")
+        h1.title= copy['accurate-affordable-transcription']
   .section
     .container
-      .content
-        h1= copy[page.key]
-  .section
-    .container
-      .content
-        figure(className="image is-square")
-          img(src="https://bulma.io/images/placeholders/256x256.png")
-        h2= copy['accurate-affordable-transcription']
+      .content.has-text-centered
         p.is-putty.is-serif= copy['home-content-1']
   .section
     .container
       .content
-        figure(className="image is-square")
+        figure.image
           img(src="https://bulma.io/images/placeholders/256x256.png")
         h2= copy['turnaround-time']
         p= copy['home-content-2']
@@ -24,7 +23,7 @@ block content
   .section
     .container
       .content
-        figure(className="image is-square")
+        figure.image
           img(src="https://bulma.io/images/placeholders/256x256.png")
         h2= copy['translations-captioning-and-copy-editing']
         p= copy['home-content-3']

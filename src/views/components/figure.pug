@@ -1,0 +1,7 @@
+mixin figure(mobile, tablet, desktop)
+  figure.image.is-hidden-tablet
+    img(src= mobile)
+  figure.image.is-hidden-desktop.is-hidden-mobile
+    img(src= tablet)
+  figure.image.is-hidden-touch
+    img(src= desktop)

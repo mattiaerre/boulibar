@@ -9,4 +9,4 @@
   #navbar-menu.navbar-menu
     .navbar-start
       each key in ['about', 'format', 'services']
-        a.navbar-item(href=`/${key}` class=`${page.path === key ? 'is-active' : ''}`)= copy[key]
+        a.navbar-item.is-seafoam-blue.is-serif(href=`/${key}` class=`${page.path === key ? 'is-active' : ''}`)= copy[key]
