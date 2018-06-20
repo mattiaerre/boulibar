@@ -7,4 +7,30 @@ block content
         h1= copy[page.key]
   .section
     .container
-      .content [TODO: content]
+      .content
+        figure.image
+          img(src="https://bulma.io/images/placeholders/256x256.png")
+        h2= copy['transcription']
+        p= copy['services-content-1']
+  .section
+    .container
+      .content
+        figure.image
+          img(src="https://bulma.io/images/placeholders/256x256.png")
+        h2= copy['translation']
+        p= copy['services-content-2']
+  .section
+    .container
+      .content
+        figure.image
+          img(src="https://bulma.io/images/placeholders/256x256.png")
+        h2= copy['closed-captioning-and-subtitles']
+        p= copy['services-content-3']
+  .section
+    .container
+      .content
+        figure.image
+          img(src="https://bulma.io/images/placeholders/256x256.png")
+        h2= copy['writing-services']
+        p= copy['services-content-4']
+  include ../cta/quote

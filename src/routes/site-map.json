@@ -1,31 +1,23 @@
 {
   "about": {
-    "info": "Static page",
     "path": "about"
   },
   "contact": {
-    "info": "Phone, email and message (sends an email)",
     "path": "contact"
   },
   "format": {
-    "info": "Static page",
     "path": "format"
   },
   "home": {
-    "info": "The home page (static content)",
     "path": ""
   },
   "payment": {
-    "info": "Page w/ payment form (posts to PayPal)",
     "path": "payment"
   },
   "quote": {
-    "info": "Page w/ order form (sends an email)",
     "path": "quote"
   },
   "services": {
-    "info":
-      "Page that contains: closed caption, translations and editing (static content)",
     "path": "services"
   }
 }

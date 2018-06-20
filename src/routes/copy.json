@@ -12,6 +12,7 @@
   "audio-quality": "Audio quality",
   "clean": "Clean",
   "clear": "Clear",
+  "closed-captioning-and-subtitles": "Closed Captioning & Subtitles",
   "contact": "Contact",
   "date-and-time-required-for-completion":
     "Date and Time required for completion",
@@ -63,6 +64,13 @@
   "required": "Required",
   "send-message": "Send message",
   "services": "Services",
+  "services-content-1":
+    "Whether you’re a PhD student writing a thesis, a filmmaker with a documentary to produce, an author writing a new book, a marketing strategist with audio from focus groups, or a non-scripted television show, we can take your audio and turn it into the written word. We will accept any audio or video format and create custom transcripts to your unique specifications. With or without TC, magazine style or verbatim.",
+  "services-content-2":
+    "Need a translation? We do that too. Whether it's Spanish to English, Turkish, Swedish or Swahili and so on ... We can provide translation and transcription for reasonable rates and with just as much ease as our simple transcription projects. Our translators reside internationally and are translating and transcribing from their native tongue to English. We can accomodate any language.",
+  "services-content-3":
+    "Specs for closed captioning and which software we use.",
+  "services-content-4": "Copy Editing & Proofreading",
   "submit-order": "Submit Order",
   "subject": "Subject",
   "subject-placeholder": "",
@@ -72,10 +80,13 @@
   "the-written-word": "The Written Word",
   "time-coded": "Time-coded",
   "todo": "TODO",
+  "transcription": "Transcription",
+  "translation": "Translation",
   "translations-captioning-and-copy-editing":
     "Translations Captioning and Copy Editing",
   "turnaround-time": "Turnaround Time",
   "upload": "Upload here",
   "verbatim": "Verbatim",
+  "writing-services": "Writing Services",
   "yes": "Yes"
 }
