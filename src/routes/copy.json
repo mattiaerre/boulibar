@@ -16,6 +16,7 @@
   "contact": "Contact",
   "date-and-time-required-for-completion":
     "Date and Time required for completion",
+  "delivery-date-and-time": "Delivery Date &amp; Time",
   "difficult": "Difficult",
   "email": "Email",
   "email-placeholder": "e.g. john.doe@email.com",
@@ -62,7 +63,7 @@
   "productions": "productions",
   "quote": "Quote",
   "required": "Required",
-  "send-message": "Send message",
+  "send-message": "Send message &rarr;",
   "services": "Services",
   "services-content-1":
     "Whether you’re a PhD student writing a thesis, a filmmaker with a documentary to produce, an author writing a new book, a marketing strategist with audio from focus groups, or a non-scripted television show, we can take your audio and turn it into the written word. We will accept any audio or video format and create custom transcripts to your unique specifications. With or without TC, magazine style or verbatim.",
@@ -71,7 +72,7 @@
   "services-content-3":
     "Specs for closed captioning and which software we use.",
   "services-content-4": "Copy Editing & Proofreading",
-  "submit-order": "Submit Order",
+  "submit-order": "Submit Order &rarr;",
   "subject": "Subject",
   "subject-placeholder": "",
   "thanks-for-filling-out-contact-form":
