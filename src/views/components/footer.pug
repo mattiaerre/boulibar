@@ -4,12 +4,9 @@
       .column
         img(height="46" src="images/logo-light.svg" width="162")
     .columns
-      .column.has-text-centered
-        a.has-text-weight-bold(href="/payment")= copy['payment']
-      .column.has-text-centered
-        a.has-text-weight-bold(href="/quote")= copy['quote']
-      .column.has-text-centered
-        a.has-text-weight-bold(href="/contact")= copy['contact']
+      each key in ['contact', 'order', 'payment', 'quote']
+        .column.has-text-centered
+          a.has-text-weight-bold(href=`/${key}`)= copy[key]
     .columns
       .column.has-text-centered
         ul.social

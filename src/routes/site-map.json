@@ -11,6 +11,9 @@
   "home": {
     "path": ""
   },
+  "order": {
+    "path": "order"
+  },
   "payment": {
     "path": "payment"
   },

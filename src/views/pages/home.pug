@@ -7,6 +7,7 @@ block content
       .container.has-text-centered
         +figure("/images/mobile/hero@3x.png", "/images/tablet/hero-img@3x.png", "/images/desktop/hero-img@2x.png")
         h1.title= copy['accurate-affordable-transcription']
+  include ../cta/order
   .section
     .container
       .content.has-text-centered
@@ -14,7 +15,7 @@ block content
   .section
     .container
       .content
-        figure.image
+        figure
           img(src="https://bulma.io/images/placeholders/256x256.png")
         h2= copy['turnaround-time']
         p= copy['home-content-2']
@@ -23,7 +24,7 @@ block content
   .section
     .container
       .content
-        figure.image
+        figure
           img(src="https://bulma.io/images/placeholders/256x256.png")
         h2= copy['translations-captioning-and-copy-editing']
         p= copy['home-content-3']

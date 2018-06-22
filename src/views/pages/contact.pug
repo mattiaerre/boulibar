@@ -7,9 +7,22 @@ block content
         h1= copy[page.key]
   .section
     .container
-      .content [TODO: content]
+      .content
+        h2= copy['phone']
+        p= copy['contact-content-1']
   .section
     .container
       .content
+        h2= copy['email']
+        p= copy['contact-content-2']
+  .section
+    .container
+      .content
+        h2= copy['form']
         #root
         script(src= appPath)
+  .section
+    .container
+      .content
+        h2= copy['address']
+        p= copy['contact-content-3']

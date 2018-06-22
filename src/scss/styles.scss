@@ -7,6 +7,7 @@ $family-serif: 'Playfair Display', serif;
 $family-sans-serif: 'Source Sans Pro', sans-serif;
 
 // colors
+$cement: #9b9994;
 $charcoalGrey: #2d343a;
 $darkTaupe: #726442;
 $lightGrey: #f2efe6;
@@ -49,9 +50,40 @@ footer {
 }
 
 .button {
-  border-radius: 0px !important;
+  border-radius: 0 !important;
   font-family: $family-serif;
 }
+
+// https://www.youtube.com/watch?v=BKhoo6RSEDU
+
+/*
+.input,
+.textarea {
+  border: none !important;
+  border-bottom: 1px solid $cement !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  margin-bottom: 1rem;
+  outline: none !important;
+}
+
+.label {
+  font-weight: normal !important;
+  left: 0 !important;
+  pointer-events: none;
+  position: absolute;
+  top: 6px;
+  transition: 0.5s;
+}
+
+.input:focus ~ .label,
+.textarea:focus ~ .label,
+.input:valid ~ .label,
+.textarea:valid ~ .label {
+  font-size: smaller !important;
+  top: -16px;
+}
+*/
 
 .is-charcoal-grey {
   color: $charcoalGrey;

@@ -9,32 +9,41 @@
   "about-content-4":
     "We are based in New York City and Los Angeles, but we can accommodate any time zone, all over the world. We are also a New York State WBE certified business and support other minority/women owned small businesses. We'd love to work with you on your next project. Place an order here and we can get started.",
   "accurate-affordable-transcription": "Accurate Affordable Transcription",
+  "address": "Address",
   "audio-quality": "Audio quality",
   "clean": "Clean",
   "clear": "Clear",
   "closed-captioning-and-subtitles": "Closed Captioning & Subtitles",
   "contact": "Contact",
+  "contact-content-1":
+    "Los Angeles Office: 323.540.4285 New York Office: 646. 234.5167",
+  "contact-content-2":
+    "Please send all inquiries to: info@movingonproductions.com",
+  "contact-content-3":
+    "Moving On Productions 347 Fifth Ave. New York City, NY 10016",
   "date-and-time-required-for-completion":
     "Date and Time required for completion",
   "delivery-date-and-time": "Delivery Date &amp; Time",
   "difficult": "Difficult",
   "email": "Email",
-  "email-placeholder": "e.g. john.doe@email.com",
+  "email-placeholder": "",
   "employment": "Employment",
+  "form": "Form",
   "format": "Format",
   "format-content-1":
     "If you have audio, in any format, we can transcribe it for you. We'll take archaic technology off your hands and turn it into the written word. Need an audio cassette transcribed? Believe it or not, we can do that! We accept all forms of Wav, MP3 and MP4 files. We'll take any digital video format as well. We provide immediate upload through this site.",
   "format-content-2":
     "What do you want your transcript to look like? You tell us. We offer our clients full customization including time code placed at the frequency you require. Whether you need the transcript clean or verbatim and the copy being as broadcast or script style. Let us know the format of the final transcript that you prefer and we'll make it happen.",
   "from-audio-to-script": "From Audio to Script",
+  "get-a-quote": "Get a Quote",
   "home": "Home",
   "home-content-1":
-    "There are some things that still have to be done the old-fashioned way, and transcription is one of those. Although we can use new technologies to streamline the process; to do it right, and most accurately, it’s all about the human ear and eye. That’s why you need us, to automate the process for you. We'll help move your project on ... from audio to the page. Whether it's an academic report, a magazine article, a reality TV show, or a focus group. We'll use antique methods so you don't have to.",
+    "There are some things that still have to be done the old-fashioned way, and transcription is one of those. Although we can use new technologies to streamline the process; to do it right, and most accurately, it's all about the human ear and eye. That's why you need us, to automate the process for you. We'll help move your project on ... from audio to the page. Whether it's an academic report, a magazine article, a reality TV show, or a focus group. We'll use antique methods so you don't have to.",
   "home-content-2":
     "We understand that on any project, deadlines are important. That's why we offer extremely low rush rates. We can also offer an expedited rate with the fastest turnaround of just double the time. Give us an hour, we'll have it transcribed and back to you in 3. Place an order now for your rush project.",
   "home-content-3":
     "We offer services beyond transcription and can help you complete your project with subtitles, translations and even copy editing.",
-  "learn-more": "Learn More &rarr;",
+  "learn-more": "Learn More",
   "learn-more-about-our-services": "Learn more about our services",
   "length-of-project": "Length of Project",
   "length-of-project-hours-placeholder": "hh",
@@ -55,24 +64,37 @@
   "moving": "moving",
   "moving-on-productions": "Moving On Productions",
   "name": "Name",
-  "name-placeholder": "e.g. John Doe",
+  "name-placeholder": "",
   "no": "No",
   "on": "on",
-  "order": "Order &rarr;",
+  "order": "Order",
+  "order-content-1":
+    "Upload your audio or video files here. We'll follow up to confirm upon receipt. If you have questions or concerns or prefer to use another method for upload, simply call at 646 234-5167 or email operations@movingonproductions.com",
   "payment": "Payment",
+  "payment-content-1":
+    "Upon completion of the project we will invoice you via email. Payment can be made in one of the following ways:",
+  "payment-content-2":
+    "Check - Make check payable to Moving On Productions and remit to 347 Fifth Avenue New York, NY 10016",
+  "payment-content-3":
+    "Credit & Debit Card - We accept all credit cards. Please make payment through PayPal by clicking the button below",
+  "payment-content-4":
+    "Credit Card Authorization Form - If you would like to establish ongoing payments, simply fill out this form and we'll keep your information on file. ",
+  "phone": "Phone",
   "productions": "productions",
   "quote": "Quote",
+  "quote-content-1":
+    "Please fill out the form below and we'll get back to you immediately with a customized price quote.",
   "required": "Required",
-  "send-message": "Send message &rarr;",
+  "send-message": "Send message",
   "services": "Services",
   "services-content-1":
-    "Whether you’re a PhD student writing a thesis, a filmmaker with a documentary to produce, an author writing a new book, a marketing strategist with audio from focus groups, or a non-scripted television show, we can take your audio and turn it into the written word. We will accept any audio or video format and create custom transcripts to your unique specifications. With or without TC, magazine style or verbatim.",
+    "Whether you're a PhD student writing a thesis, a filmmaker with a documentary to produce, an author writing a new book, a marketing strategist with audio from focus groups, or a non-scripted television show, we can take your audio and turn it into the written word. We will accept any audio or video format and create custom transcripts to your unique specifications. With or without TC, magazine style or verbatim.",
   "services-content-2":
     "Need a translation? We do that too. Whether it's Spanish to English, Turkish, Swedish or Swahili and so on ... We can provide translation and transcription for reasonable rates and with just as much ease as our simple transcription projects. Our translators reside internationally and are translating and transcribing from their native tongue to English. We can accomodate any language.",
   "services-content-3":
     "Specs for closed captioning and which software we use.",
   "services-content-4": "Copy Editing & Proofreading",
-  "submit-order": "Submit Order &rarr;",
+  "submit-order": "Submit Order",
   "subject": "Subject",
   "subject-placeholder": "",
   "thanks-for-filling-out-contact-form":
