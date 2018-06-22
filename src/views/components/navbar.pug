@@ -9,5 +9,5 @@
       span(aria-hidden="true")
   #navbar-menu.navbar-menu
     .navbar-start
-      each key in ['about', 'contact', 'format', 'services']
+      each key in ['about', 'format', 'services', 'contact']
         a.navbar-item.is-seafoam-blue.is-serif(href=`/${key}` class=`${page.path === key ? 'is-active' : ''}`)= copy[key]
