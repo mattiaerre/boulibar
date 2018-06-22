@@ -14,6 +14,8 @@
   "clean": "Clean",
   "clear": "Clear",
   "closed-captioning-and-subtitles": "Closed Captioning & Subtitles",
+  "company": "Company",
+  "company-placeholder": "",
   "contact": "Contact",
   "contact-content-1":
     "Los Angeles Office: 323.540.4285 New York Office: 646. 234.5167",
@@ -24,10 +26,12 @@
   "date-and-time-required-for-completion":
     "Date and Time required for completion",
   "delivery-date-and-time": "Delivery Date &amp; Time",
+  "delivery-time": "Delivery Time",
   "difficult": "Difficult",
   "email": "Email",
   "email-placeholder": "",
   "employment": "Employment",
+  "expedited": "Expedited (same day)",
   "form": "Form",
   "format": "Format",
   "format-content-1":
@@ -79,12 +83,18 @@
     "Credit & Debit Card - We accept all credit cards. Please make payment through PayPal by clicking the button below",
   "payment-content-4":
     "Credit Card Authorization Form - If you would like to establish ongoing payments, simply fill out this form and we'll keep your information on file. ",
+  "payment-form": "Payment Form",
   "phone": "Phone",
+  "phone-number": "Phone Number",
+  "phone-number-placeholder": "",
   "productions": "productions",
+  "project-name": "Project Name",
+  "project-name-placeholder": "",
   "quote": "Quote",
   "quote-content-1":
     "Please fill out the form below and we'll get back to you immediately with a customized price quote.",
   "required": "Required",
+  "rush": "Rush (24 hours)",
   "send-message": "Send message",
   "services": "Services",
   "services-content-1":
@@ -94,11 +104,14 @@
   "services-content-3":
     "Specs for closed captioning and which software we use.",
   "services-content-4": "Copy Editing & Proofreading",
+  "standard": "Standard (3-5 business days)",
   "submit-order": "Submit Order",
+  "submit-quote": "Submit Quote",
   "subject": "Subject",
   "subject-placeholder": "",
   "thanks-for-filling-out-contact-form":
     "Thanks for filling out our contact form!",
+  "thanks-for-filling-out-order-form": "Thanks for filling out our order form!",
   "thanks-for-filling-out-quote-form": "Thanks for filling out our quote form!",
   "the-written-word": "The Written Word",
   "time-coded": "Time-coded",

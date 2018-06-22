@@ -13,6 +13,7 @@ const to = data => {
       return process.env.EMAIL_INFO;
     case 'payment':
       return process.env.EMAIL_FINANCE;
+    case 'order':
     case 'quote':
       return process.env.EMAIL_OPERATIONS;
     default:
@@ -26,6 +27,8 @@ const textTemplate = data => {
       return `name: ${data.name}, email: ${data.email}, subject: ${
         data.subject
       }, message: ${data.message}`;
+    case 'order':
+      return 'TODO';
     case 'payment':
       return 'TODO';
     case 'quote':

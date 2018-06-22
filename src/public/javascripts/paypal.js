@@ -33,6 +33,7 @@
       onAuthorize: (data, actions) =>
         actions.payment.execute().then(() => {
           console.log('payment completed');
+          // todo: send email w/ info in payment form
         }),
 
       /*
