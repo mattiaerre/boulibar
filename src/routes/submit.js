@@ -1,5 +1,6 @@
 const debug = require('debug')('boulibar:routes/submit');
 const express = require('express');
+const moment = require('moment-timezone');
 const path = require('path');
 const pug = require('pug');
 const { name, version } = require('../../package.json');
@@ -21,25 +22,16 @@ const to = data => {
   }
 };
 
-const textTemplate = data => {
-  switch (data.key) {
-    case 'contact':
-      return `name: ${data.name}, email: ${data.email}, subject: ${
-        data.subject
-      }, message: ${data.message}`;
-    case 'order':
-      return 'TODO';
-    case 'payment':
-      return 'TODO';
-    case 'quote':
-      return 'TODO';
-    default:
-      return 'Doh!';
-  }
-};
+const textTemplate = data =>
+  Object.keys(data)
+    .map(key => `${key}: ${data[key]}`)
+    .join('\n');
 
 router.post('/', (req, res) => {
   const { data } = req.body;
+  data['date-time'] = moment()
+    .tz('America/New_York')
+    .format();
   const mailOptions = {
     from: data.email,
     to: to(data),

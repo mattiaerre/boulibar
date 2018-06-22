@@ -1,11 +1,12 @@
-case key
-  when 'contact'
-    h1= subject
-    h2= `"${name}"" <${email}>`
-    p= message
-  when 'order'
-    div TODO
-  when 'payment'
-    div TODO
-  when 'quote'
-    div TODO
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title= key
+  body
+    h1= key
+    h2= locals['date-time']
+    each value, index in locals
+      p= `${index}: ${value}`
