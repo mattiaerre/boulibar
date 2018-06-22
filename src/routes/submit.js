@@ -4,6 +4,7 @@ const moment = require('moment-timezone');
 const path = require('path');
 const pug = require('pug');
 const { name, version } = require('../../package.json');
+const emails = require('./emails.json');
 const sendMail = require('./send-mail');
 
 const router = express.Router();
@@ -11,14 +12,14 @@ const router = express.Router();
 const to = data => {
   switch (data.key) {
     case 'contact':
-      return process.env.EMAIL_INFO;
+      return emails.info;
     case 'payment':
-      return process.env.EMAIL_FINANCE;
+      return emails.finance;
     case 'order':
     case 'quote':
-      return process.env.EMAIL_OPERATIONS;
+      return emails.operations;
     default:
-      return process.env.EMAIL_ADMIN;
+      return emails.admin;
   }
 };
 
