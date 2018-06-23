@@ -6,7 +6,5 @@ html(lang="en")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     title= key
   body
-    h1= key
-    h2= locals['date-time']
     each value, index in locals
       p= `${index}: ${value}`

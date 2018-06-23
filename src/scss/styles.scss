@@ -18,13 +18,22 @@ $grey-dark: #fff; // text
 $grey-darker: #f2efe6; // headings, buttons
 $white: #2d343a; // background
 
+@import '../../node_modules/bulma/bulma.sass';
+
+a {
+  color: $seafoamBlue;
+}
+
 h1,
 h2 {
   font-family: $family-serif;
 }
 
+h2 {
+  color: $putty;
+}
+
 footer {
-  background-color: $lightGrey;
   font-family: $family-serif;
   margin: 1rem 1rem 0 1rem;
 
@@ -42,6 +51,14 @@ footer {
     padding: 0.45rem;
   }
 
+  .section {
+    padding: 0;
+
+    .container {
+      background-color: $lightGrey;
+    }
+  }
+
   .social {
     display: flex;
     justify-content: space-around;
@@ -50,13 +67,19 @@ footer {
 }
 
 hr {
-  background-color: $seafoamBlue !important;
-  margin: 1.5rem 4rem !important;
+  background-color: $seafoamBlue;
+  margin: 1.5rem 4rem;
 }
 
 .button {
-  border-radius: 0 !important;
+  border-radius: 0;
   font-family: $family-serif;
+}
+
+.card {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 
 // https://www.youtube.com/watch?v=BKhoo6RSEDU
@@ -64,17 +87,17 @@ hr {
 /*
 .input,
 .textarea {
-  border: none !important;
-  border-bottom: 1px solid $cement !important;
-  border-radius: 0 !important;
-  box-shadow: none !important;
+  border: none;
+  border-bottom: 1px solid $cement;
+  border-radius: 0;
+  box-shadow: none;
   margin-bottom: 1rem;
-  outline: none !important;
+  outline: none;
 }
 
 .label {
-  font-weight: normal !important;
-  left: 0 !important;
+  font-weight: normal;
+  left: 0;
   pointer-events: none;
   position: absolute;
   top: 6px;
@@ -85,7 +108,7 @@ hr {
 .textarea:focus ~ .label,
 .input:valid ~ .label,
 .textarea:valid ~ .label {
-  font-size: smaller !important;
+  font-size: smaller;
   top: -16px;
 }
 */
@@ -99,7 +122,7 @@ hr {
 }
 
 .is-seafoam-blue {
-  color: $seafoamBlue !important;
+  color: $seafoamBlue;
 }
 
 .is-serif {
@@ -108,12 +131,12 @@ hr {
 
 .navbar-item {
   img {
-    max-height: none !important;
+    max-height: none;
   }
 }
 
 .hero {
-  padding: 0 !important;
+  padding: 0;
 
   .hero-body {
     padding: 1.5rem 1.5rem 0;
@@ -144,5 +167,3 @@ hr {
     }
   }
 }
-
-@import '../../node_modules/bulma/bulma.sass';

@@ -1,4 +1,5 @@
 extends ../layout
+include ../components/pdf
 
 block content
   .section
@@ -22,11 +23,10 @@ block content
         p= copy['format-content-2']
   .section
     .container
-      .content
-        ul
-          li
-            a(href="/documents/Sample Transcript .pdf" target="_blank") Standard Timecoded Transcript
-          li
-            a(href="/documents/template_As Broadcast.pdf" target="_blank") As Broadcast Transcript
-          li
-            a(href="/documents/template_audio.pdf" target="_blank") Standard Audio Transcript
+      .columns
+        .column
+          +pdf("/documents/Sample Transcript .pdf", copy['standard-timecoded-transcript'])
+        .column
+          +pdf("/documents/template_As Broadcast.pdf", copy['as-broadcast-transcript'])
+        .column
+          +pdf("/documents/template_audio.pdf", copy['standard-audio-transcript'])

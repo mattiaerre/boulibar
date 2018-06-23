@@ -1,4 +1,5 @@
 const nodemailer = require('nodemailer');
+// https://medium.com/@manojsinghnegi/sending-an-email-using-nodemailer-gmail-7cfa0712a799
 
 module.exports = (mailOptions, callback) => {
   nodemailer.createTestAccount((err, account) => {
