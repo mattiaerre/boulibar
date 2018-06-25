@@ -163,17 +163,11 @@ hr {
       }
     }
     a {
-      left: 0;
-      margin-left: 4rem;
-      margin-right: 4rem;
+      left: 50%;
+      margin-left: -90px;
       position: absolute;
-      right: 0;
       top: 70%;
-      font-size: x-large;
-      font-weight: bold;
-      //text-shadow: 2px 2px $charcoalGrey;
-      background-color: rgba($color: $charcoalGrey, $alpha: 0.75);
-      border: 1px solid $seafoamBlue;
+      width: 180px;
     }
   }
 }
