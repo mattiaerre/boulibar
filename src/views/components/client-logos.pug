@@ -1,3 +1,21 @@
+mixin columns(keys)
+  .columns.is-mobile
+    each key in keys
+      +column(key)
+
+mixin column(key)
+  .column.has-text-centered
+    if(key !== null)
+      img.client-logo(src=`/images/client-logos/${key}/logo-copy@3x.png`)
+
 .section
   .container
-    .content [TODO: CLIENT LOGOS]
+    +columns(['01-bloomberg-television', '02-columbia-university'])
+    +columns(['03-conde-nast', '04-food-network'])
+    +columns(['05-lucky-8', '06-maxim-integrated'])
+    +columns(['07-mtv', '08-munn-rabot'])
+    +columns(['09-national-geographic-channel', '10-refinery-29'])
+    +columns(['11-viacom', '12-national-geographic'])
+    +columns(['13-rock-shrimp-productions', '14-rice'])
+    +columns(['15-statistics-solutions', '16-zero-point-zero'])
+    +columns(['17-the-playlist', null])
