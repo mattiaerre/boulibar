@@ -4,12 +4,13 @@ block content
   .section
     .container
       .content
-        h1= copy[page.key]
-  include ../cta/upload
+        h1= copy['lets-get-started']
   .section
     .container
       .content
-        p= copy['order-content-1']
+        p.has-text-centered= copy['order-content-1']
+          a.is-foam-blue(href="mailto:operations@movingonproductions.com") operations@movingonproductions.com
+  include ../cta/upload
   .section
     .container
       .content

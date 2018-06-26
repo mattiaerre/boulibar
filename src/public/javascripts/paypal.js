@@ -23,12 +23,17 @@
         production: '<insert production client id>'
       },
 
-      payment: (data, actions) =>
-        actions.payment.create({
+      payment: (data, actions) => {
+        const clientName = document.getElementById('client-name').value;
+        const amountPaid = document.getElementById('amount-paid').value;
+        console.log('clientName:', clientName, 'amountPaid:', amountPaid);
+
+        return actions.payment.create({
           payment: {
             transactions: [{ amount: { total: '0.01', currency: 'USD' } }]
           }
-        }),
+        });
+      },
 
       onAuthorize: (data, actions) =>
         actions.payment.execute().then(() => {

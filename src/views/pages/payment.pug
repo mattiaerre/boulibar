@@ -23,10 +23,16 @@ block content
   .section
     .container
       .content
-        #root
-        script(src= appPath)
-  .section
-    .container
-      .content
-        #paypal-button-container
-        script(src="javascripts/paypal.js")
+        form
+          .field
+            .control
+              label.label.is-serif= copy['client-name']
+              input#client-name.input
+          .field
+            .control
+              label.label.is-serif= copy['amount-paid']
+              input#amount-paid.input(type="number")
+          .field
+            .control
+              #paypal-button-container
+              script(src="javascripts/paypal.js")

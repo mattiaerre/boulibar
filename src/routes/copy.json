@@ -10,18 +10,18 @@
     "We are based in New York City and Los Angeles, but we can accommodate any time zone, all over the world. We are also a New York State WBE certified business and support other minority/women owned small businesses. We'd love to work with you on your next project. Place an order here and we can get started.",
   "accurate-affordable-transcription": "Accurate Affordable Transcription",
   "address": "Address",
+  "amount-paid": "Amount Paid",
   "as-broadcast-transcript": "As Broadcast Transcript",
   "audio-quality": "Audio quality",
   "check": "Check",
   "clean": "Clean",
   "clear": "Clear",
+  "client-name": "Client Name",
   "closed-captioning-and-subtitles": "Closed Captioning & Subtitles",
   "company": "Company",
   "company-address": "347 Fifth Avenue New York, NY 10016",
   "company-placeholder": "",
   "contact": "Contact",
-  "contact-content-1":
-    "Los Angeles Office: 323.540.4285 New York Office: 646. 234.5167",
   "contact-content-2": "Please send all inquiries to: ",
   "credit-card-authorization-form": "Credit Card Authorization Form",
   "credit-and-debit-card": "Credit & Debit Card",
@@ -41,6 +41,7 @@
     "If you have audio, in any format, we can transcribe it for you. We'll take archaic technology off your hands and turn it into the written word. Need an audio cassette transcribed? Believe it or not, we can do that! We accept all forms of Wav, MP3 and MP4 files. We'll take any digital video format as well. We provide immediate upload through this site.",
   "format-content-2":
     "What do you want your transcript to look like? You tell us. We offer our clients full customization including time code placed at the frequency you require. Whether you need the transcript clean or verbatim and the copy being as broadcast or script style. Let us know the format of the final transcript that you prefer and we'll make it happen.",
+  "founder": "Founder",
   "from-audio-to-script": "From Audio to Script",
   "get-a-quote": "Get a Quote",
   "home": "Home",
@@ -52,16 +53,17 @@
     "We offer services beyond transcription and can help you complete your project with subtitles, translations and even copy editing.",
   "home-content-4":
     "Although we can use new technologies to streamline the process; to do it right, and most accurately, it's all about the human ear and eye. That's why you need us, to automate the process for you. We'll help move your project on ... from audio to the page. Whether it's an academic report, a magazine article, a reality TV show, or a focus group. We'll use antique methods so you don't have to.",
-  "learn-more": "Learn More",
+  "learn-more": "Learn More &rarr;",
   "learn-more-about-our-services": "Learn more about our services",
   "length-of-project": "Length of Project",
   "length-of-project-hours-placeholder": "hh",
   "length-of-project-minutes-placeholder": "mm",
   "length-of-project-seconds-placeholder": "ss",
-  "lisa-smith-founder": "Lisa Smith - Founder",
+  "lets-get-started": "Let's Get Started",
+  "lisa-smith": "Lisa Smith",
   "lisa-smith-founder-text":
     "Lisa Smith worked for years in the fields of journalism and television productions including CBS Newspath, Extra TV and Columbia University Graduate School of Journalism. She has also worked in independent film production as a line producer and production coordinator. Moving between New York City and Los Angeles, her love of filmmaking and writing has kept her in the industry and facilitating other authors and filmmakers to tell their story is her passion. She has an MBA and a BA degree from Columbia University in English literature.",
-  "lisa-nelson-operations-manager": "Lisa Nelson - Operations Manager",
+  "lisa-nelson": "Lisa Nelson",
   "lisa-nelson-operations-manager-text":
     "Lisa Nelson has over 20 years of experience in the transcription industry as a sales coordinator and an operations manager as well as a transcriptionist. She is incredibly detail oriented and has an eye for quality. Prior to working in the transcription industry she worked in the financial industry as an executive administrative secretary for such companies as Chase Investment services. She has a BA in music from Northern Illinois University with a electronic composition emphasis. This expertise has been incredibly helpful in the audio world of transcription where her unique skills in audio and pro-tools are heavily utilized.",
   "lorem-ipsum":
@@ -76,9 +78,11 @@
   "new-york-office": "New York Office: ",
   "no": "No",
   "on": "on",
+  "operations-manager": "Operations Manager",
   "order": "Order",
+  "order-rarr": "Order &rarr;",
   "order-content-1":
-    "Upload your audio or video files here. We'll follow up to confirm upon receipt. If you have questions or concerns or prefer to use another method for upload, simply call at 646 234-5167 or email operations@movingonproductions.com",
+    "Upload your audio or video files here. We'll follow up to confirm upon receipt. If you have questions or concerns or prefer to use another method for upload, simply email: ",
   "payment": "Payment",
   "payment-content-1":
     "Upon completion of the project we will invoice you via email. Payment can be made in one of the following ways:",
@@ -96,6 +100,7 @@
   "project-name": "Project Name",
   "project-name-placeholder": "",
   "quote": "Quote",
+  "quote-rarr": "Quote &rarr;",
   "quote-content-1":
     "Please fill out the form below and we'll get back to you immediately with a customized price quote.",
   "required": "Required",
@@ -129,7 +134,8 @@
   "translations-captioning-and-copy-editing":
     "Translations Captioning and Copy Editing",
   "turnaround-time": "Turnaround Time",
-  "upload": "Upload here",
+  "upload": "Upload &rarr;",
+  "USD": "$",
   "verbatim": "Verbatim",
   "writing-services": "Writing Services",
   "yes": "Yes"
