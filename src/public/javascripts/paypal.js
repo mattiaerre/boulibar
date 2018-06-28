@@ -1,10 +1,10 @@
-/* global paypal */
+/* global __MODEL__, paypal */
 /* eslint no-console: "off", no-unused-vars: "off" */
 
 (() => {
   paypal.Button.render(
     {
-      env: 'sandbox', // 'production' | 'sandbox',
+      env: __MODEL__.payPal.env,
       commit: true,
 
       style: {
@@ -18,19 +18,18 @@
       },
 
       client: {
-        sandbox:
-          'AZDxjDScFpQtjWTOUtWKbyN_bDt4OgqaF4eYXlewfBP4-8aqX3PiV8e1GWU6liB2CUXlkA59kJXE7M6R',
-        production: '<insert production client id>'
+        production: __MODEL__.payPal.liveClientId,
+        sandbox: __MODEL__.payPal.sandboxClientId
       },
 
       payment: (data, actions) => {
         const clientName = document.getElementById('client-name').value;
         const amountPaid = document.getElementById('amount-paid').value;
         console.log('clientName:', clientName, 'amountPaid:', amountPaid);
-
+        // check: https://developer.paypal.com/docs/checkout/integrate/#2-set-up-a-payment
         return actions.payment.create({
           payment: {
-            transactions: [{ amount: { total: '0.01', currency: 'USD' } }]
+            transactions: [{ amount: { total: amountPaid, currency: 'USD' } }]
           }
         });
       },

@@ -12,8 +12,16 @@ function handler(req, res, page) {
   const model = {
     appPath: process.env.APP_PATH,
     copy,
+    features: {
+      paypal: !isProd()
+    },
     name,
     page,
+    payPal: {
+      env: isProd() ? 'production' : 'sandbox',
+      liveClientId: process.env.PAYPAL_LIVE_CLIENT_ID,
+      sandboxClientId: process.env.PAYPAL_SANDBOX_CLIENT_ID
+    },
     stylesheet,
     trackingId: process.env.TRACKING_ID,
     version
