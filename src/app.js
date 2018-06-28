@@ -6,6 +6,7 @@ const createError = require('http-errors');
 const logger = require('morgan');
 const sassMiddleware = require('node-sass-middleware');
 const path = require('path');
+const isProd = require('./is-prod');
 const index = require('./routes/index');
 const submit = require('./routes/submit');
 
@@ -20,7 +21,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
-if (process.env.PROD !== 'true') {
+if (!isProd()) {
   app.use(
     sassMiddleware({
       src: path.join(__dirname, 'scss'),

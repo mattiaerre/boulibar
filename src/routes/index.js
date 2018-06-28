@@ -1,21 +1,16 @@
 const debug = require('debug')('boulibar:routes/index');
 const express = require('express');
 const { name, version } = require('../../package.json');
+const isProd = require('../is-prod');
 const copy = require('./copy.json');
 const siteMap = require('./site-map.json');
 
 const router = express.Router();
 
-function appPath() {
-  return process.env.PROD === 'true'
-    ? 'javascripts/main.js'
-    : process.env.APP_PATH;
-}
-
 function handler(req, res, page) {
-  const stylesheet = `${process.env.PROD === 'true' ? 'stylesheets' : ''}`;
+  const stylesheet = `${isProd() ? 'stylesheets' : ''}`;
   const model = {
-    appPath: appPath(),
+    appPath: process.env.APP_PATH,
     copy,
     name,
     page,
