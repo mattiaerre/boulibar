@@ -13,13 +13,15 @@ function handler(req, res, page) {
     appPath: process.env.APP_PATH,
     copy,
     features: {
-      paypal: !isProd()
+      paypal: true
     },
     name,
     page,
     payPal: {
+      brandName: `${copy['moving-on-productions']} v${version}`,
       env: isProd() ? 'production' : 'sandbox',
       liveClientId: process.env.PAYPAL_LIVE_CLIENT_ID,
+      logoImage: process.env.LOGO_LIGHT_BG,
       sandboxClientId: process.env.PAYPAL_SANDBOX_CLIENT_ID
     },
     stylesheet,
