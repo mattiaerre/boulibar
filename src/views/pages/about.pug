@@ -1,4 +1,37 @@
 extends ../layout
+
+mixin cardDesktopLeft(alt, src, h3, h4, bio)
+  .card.is-hidden-touch
+    .card-content
+      .media
+        .media-left
+          +figure(alt, src)
+        .media-content
+          +content(h3, h4, bio)
+
+mixin cardDesktopRight(alt, src, h3, h4, bio)
+  .card.is-hidden-touch
+    .card-content
+      .media
+        .media-content.has-text-right
+          +content(h3, h4, bio)
+        .media-right
+          +figure(alt, src)
+
+mixin cardTouch(alt, src, h3, h4, bio)
+  .card.is-hidden-desktop
+    .card-image
+      +figure(alt, src)
+    .card-content
+      .media
+        .media-content
+          +content(h3, h4, bio)
+
+mixin content(h3, h4, bio)
+  h3= h3
+  h4.subtitle= h4
+  .content= bio
+
 mixin figure(alt, src)
   figure.is-2by3
     img(alt= alt heigth="381" src= src width="254")
@@ -12,38 +45,18 @@ block content
     .container
       .content
         figure
-          img(src="https://bulma.io/images/placeholders/256x256.png")
+          img.image(src="/images/pages/about/34561279_s.jpg")
         p= copy['about-content-1']
         p= copy['about-content-2']
+        p.is-putty.is-serif.has-text-centered= copy['about-content-highlight']
+        hr
         p= copy['about-content-3']
         p= copy['about-content-4']
   include ../cta/quote
   .section
     .container
       .content
-        .card
-          .card-image.is-hidden-desktop
-            +figure(copy['lisa-smith'], "/images/pages/about/lisa-smith.png")
-          .card-content
-            .media
-              .media-left.is-hidden-touch
-                +figure(copy['lisa-smith'], "/images/pages/about/lisa-smith.png")
-              .media-content
-                h3= copy['lisa-smith']
-                h4.subtitle= copy['founder']
-                .content= copy['lisa-smith-founder-text']
-        .card
-          .card-image.is-hidden-desktop
-            +figure(copy['lisa-nelson'], "/images/pages/about/lisa-nelson.jpg")
-          .card-content
-            .media
-              .media-content.is-hidden-desktop
-                h3= copy['lisa-nelson']
-                h4.subtitle= copy['operations-manager']
-                .content= copy['lisa-nelson-operations-manager-text']
-              .media-content.is-hidden-touch
-                h3.has-text-right= copy['lisa-nelson']
-                h4.has-text-right.subtitle= copy['operations-manager']
-                .content.has-text-right= copy['lisa-nelson-operations-manager-text']
-              .media-right.is-hidden-touch
-                +figure(copy['lisa-nelson'], "/images/pages/about/lisa-nelson.jpg")
+        +cardTouch(copy['lisa-smith'], "/images/pages/about/lisa-smith.png", copy['lisa-smith'], copy['founder'], copy['lisa-smith-bio'])
+        +cardTouch(copy['lisa-nelson'], "/images/pages/about/lisa-nelson.jpg", copy['lisa-nelson'], copy['operations-manager'], copy['lisa-nelson-bio'])
+        +cardDesktopLeft(copy['lisa-smith'], "/images/pages/about/lisa-smith.png", copy['lisa-smith'], copy['founder'], copy['lisa-smith-bio'])
+        +cardDesktopRight(copy['lisa-nelson'], "/images/pages/about/lisa-nelson.jpg", copy['lisa-nelson'], copy['operations-manager'], copy['lisa-nelson-bio'])

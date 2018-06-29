@@ -10,10 +10,10 @@ block content
         a.button.is-large(href="/order") !{copy['order']}
   .section
     .container
-      .content.has-text-centered
-        p.is-putty.is-serif= copy['home-content-1']
+      .content
+        p.is-putty.is-serif.has-text-centered= copy['home-content-1']
         hr
-        p.has-text-left= copy['home-content-2']
+        p= copy['home-content-2']
   .section
     .container
       .content
