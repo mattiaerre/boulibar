@@ -3,10 +3,11 @@ include ../components/hero
 include ../components/pdf
 
 block content
-  +hero("/images/pages/format/95180884_s.jpg", copy['from-audio-to-script'])
+  +hero("/images/pages/format/95180884_s.jpg", null)
   .section
     .container
       .content
+        h2= copy['from-audio-to-script']
         p= copy['format-content-1']
   include ../cta/order
   .section
