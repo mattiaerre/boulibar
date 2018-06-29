@@ -37,6 +37,6 @@ module.exports = async (mailOptions, callback) => {
       })
     );
   } catch (error) {
-    callback(error);
+    return callback(error);
   }
 };
