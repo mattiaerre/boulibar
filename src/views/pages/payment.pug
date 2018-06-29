@@ -21,6 +21,8 @@ block content
         if features.paypal
           h2= copy['credit-and-debit-card']
           p= copy['payment-content-4']
+          .notification#notification.is-hidden
+            button#notification-button.delete
           form
             .field
               .control
