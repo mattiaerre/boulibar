@@ -1,0 +1,13 @@
+mixin container(src, title)
+  .container
+    .content
+      img(src= src)
+      h1.title= title
+
+mixin hero(src, title)
+  .boulibar-hero-mobile.is-hidden-tablet
+    +container(src, title)
+  .boulibar-hero-tablet.is-hidden-desktop.is-hidden-mobile
+    +container(src, title)
+  .boulibar-hero-desktop.is-hidden-touch
+    +container(src, title)

@@ -1,4 +1,5 @@
 extends ../layout
+include ../components/hero
 
 mixin cardDesktopLeft(alt, src, h3, h4, bio)
   .card.is-hidden-touch
@@ -37,15 +38,10 @@ mixin figure(alt, src)
     img(alt= alt heigth="381" src= src width="254")
 
 block content
+  +hero("/images/pages/about/34561279_s.jpg", copy['we-are-moving-on'])
   .section
     .container
       .content
-        h1= copy['we-are-moving-on']
-  .section
-    .container
-      .content
-        figure
-          img.image(src="/images/pages/about/34561279_s.jpg")
         p= copy['about-content-1']
         p= copy['about-content-2']
         p.is-putty.is-serif.has-text-centered= copy['about-content-highlight']
