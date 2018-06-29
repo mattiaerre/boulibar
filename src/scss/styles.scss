@@ -17,6 +17,8 @@ $seafoamBlue: #74b3ce;
 $grey-dark: #fff; // text
 $grey-darker: #f2efe6; // headings, buttons
 $white: #2d343a; // background
+// variables
+$body-size: 1.125rem;
 
 @import '../../node_modules/bulma/bulma.sass';
 
@@ -48,6 +50,12 @@ h4 {
 h2,
 h3 {
   color: $putty !important;
+}
+
+figure.is-2by3 {
+  img {
+    border: 1px solid $cement;
+  }
 }
 
 footer {

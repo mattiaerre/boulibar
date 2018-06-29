@@ -1,4 +1,7 @@
 extends ../layout
+mixin figure(alt, src)
+  figure.is-2by3
+    img(alt= alt heigth="381" src= src width="254")
 
 block content
   .section
@@ -19,22 +22,28 @@ block content
     .container
       .content
         .card
-          .card-image
-            figure.is-128x128
-              img(src="https://bulma.io/images/placeholders/128x128.png" alt= copy['lisa-smith-founder'])
+          .card-image.is-hidden-desktop
+            +figure(copy['lisa-smith'], "/images/pages/about/lisa-smith.png")
           .card-content
             .media
+              .media-left.is-hidden-touch
+                +figure(copy['lisa-smith'], "/images/pages/about/lisa-smith.png")
               .media-content
                 h3= copy['lisa-smith']
                 h4.subtitle= copy['founder']
-            .content= copy['lisa-smith-founder-text']
+                .content= copy['lisa-smith-founder-text']
         .card
-          .card-image
-            figure.is-128x128
-              img(src="https://bulma.io/images/placeholders/128x128.png" alt= copy['lisa-smith-founder'])
+          .card-image.is-hidden-desktop
+            +figure(copy['lisa-nelson'], "/images/pages/about/lisa-nelson.jpg")
           .card-content
             .media
-              .media-content
+              .media-content.is-hidden-desktop
                 h3= copy['lisa-nelson']
                 h4.subtitle= copy['operations-manager']
-            .content= copy['lisa-nelson-operations-manager-text']
+                .content= copy['lisa-nelson-operations-manager-text']
+              .media-content.is-hidden-touch
+                h3.has-text-right= copy['lisa-nelson']
+                h4.has-text-right.subtitle= copy['operations-manager']
+                .content.has-text-right= copy['lisa-nelson-operations-manager-text']
+              .media-right.is-hidden-touch
+                +figure(copy['lisa-nelson'], "/images/pages/about/lisa-nelson.jpg")
