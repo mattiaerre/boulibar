@@ -137,32 +137,51 @@ hr {
   }
 }
 
-.hero {
-  &.home {
-    padding: 0;
+.boulibar-hero-home-mobile,
+.boulibar-hero-home-tablet,
+.boulibar-hero-home-desktop {
+  h1 {
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    right: 0;
+  }
+  a {
+    left: 50%;
+    margin-left: -90px;
+    position: absolute;
+    width: 180px;
+  }
+}
 
-    .hero-body {
-      padding: 1.5rem 1.5rem 0;
+.boulibar-hero-home-mobile {
+  a {
+    top: 65%;
+  }
+  h1 {
+    font-size: 2rem;
+    top: 30%;
+  }
+}
 
-      .container {
-        h1 {
-          font-size: xx-large;
-          left: 0;
-          margin-left: auto;
-          margin-right: auto;
-          position: absolute;
-          right: 0;
-          top: 30%;
-        }
-      }
-      a {
-        left: 50%;
-        margin-left: -90px;
-        position: absolute;
-        top: 70%;
-        width: 180px;
-      }
-    }
+.boulibar-hero-home-tablet {
+  a {
+    top: 70%;
+  }
+  h1 {
+    font-size: 2.6rem;
+    top: 40%;
+  }
+}
+
+.boulibar-hero-home-desktop {
+  a {
+    top: 65%;
+  }
+  h1 {
+    font-size: 2.6rem;
+    top: 35%;
   }
 }
 
@@ -189,4 +208,8 @@ hr {
 .boulibar-content {
   margin: auto;
   max-width: 600px !important;
+}
+
+.has-margin-auto {
+  margin: auto;
 }

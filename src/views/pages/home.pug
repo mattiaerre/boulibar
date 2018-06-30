@@ -1,26 +1,50 @@
 extends ../layout
-include ../components/figure
+
+mixin heroBody(src)
+  .section.is-paddingless
+    .container
+      .content.has-text-centered
+        figure
+          img(src= src)
+        // h1.title= copy['accurate-affordable-transcription']
+        h1.title
+          | Accurate
+          | Affordable
+          br
+          | Transcription
+        a.button.is-large(href="/order") !{copy['order']}
+
+mixin heroHome(mobile, tablet, desktop)
+  .boulibar-hero-home-mobile.is-hidden-tablet
+    +heroBody(mobile)
+  .boulibar-hero-home-tablet.is-hidden-desktop.is-hidden-mobile
+    +heroBody(tablet)
+  .boulibar-hero-home-desktop.is-hidden-touch
+    +heroBody(desktop)
 
 block hero
-  .section.hero.home
-    .hero-body
-      .container.has-text-centered
-        +figure("/images/mobile/hero@3x.png", "/images/tablet/hero-img@3x.png", "/images/desktop/hero-img@2x.png")
-        h1.title= copy['accurate-affordable-transcription']
-        a.button.is-large(href="/order") !{copy['order']}
+  +heroHome("/images/mobile/hero@3x.png", "/images/tablet/hero-img@3x.png", "/images/desktop/hero-img@2x.png")
 
 block content
   p.is-putty.is-serif.has-text-centered= copy['home-content-1']
   hr
   p= copy['home-content-2']
-  figure
-    img(src="https://bulma.io/images/placeholders/256x256.png")
+  figure.is-marginless
+    img.image(src="/images/pages/home/brooke-campbell-44085-unsplash.jpg")
   h2= copy['turnaround-time']
   p= copy['home-content-3']
   include ../cta/quote
   include ../components/client-logos
-  figure
-    img(src="https://bulma.io/images/placeholders/256x256.png")
-  h2= copy['translations-captioning-and-copy-editing']
-  p= copy['home-content-4']
-  include ../cta/learn-more
+  .columns
+    .column
+      figure.is-marginless
+        img(src="/images/pages/home/fancycrave-440148-unsplash.jpg")
+    .column.is-one-third
+      h2= copy['translations-captioning-and-copy-editing']
+      p= copy['home-content-4']
+  .columns
+    .column.is-one-third.has-margin-auto
+      include ../cta/learn-more
+    .column
+      figure.is-marginless
+        img.image(src="/images/pages/home/77140675_s.jpg")
