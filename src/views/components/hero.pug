@@ -1,15 +1,14 @@
-mixin container(src, title)
-  .section
-    .container
-      .content
-        img(src= src)
-        if (title !== null)
-          h1.title= title
+mixin container(title)
+  if (title !== null)
+    h1.title= title
 
 mixin hero(src, title)
-  .boulibar-hero-mobile.is-hidden-tablet
-    +container(src, title)
-  .boulibar-hero-tablet.is-hidden-desktop.is-hidden-mobile
-    +container(src, title)
-  .boulibar-hero-desktop.is-hidden-touch
-    +container(src, title)
+  .section
+    .container
+      .content.boulibar-hero-mobile.is-hidden-tablet
+        +container(title)
+      .content.boulibar-hero-tablet.is-hidden-desktop.is-hidden-mobile
+        +container(title)
+      .content.boulibar-hero-desktop.is-hidden-touch(style=`background-image: url(${src}); background-repeat: no-repeat;`)
+        +container(title)
+

@@ -3,7 +3,7 @@ include ../components/hero
 include ../components/pdf
 
 block hero
-  +hero("/images/pages/format/95180884_s.jpg", null)
+  +hero("/images/pages/format/95180884_s.jpg", copy[page.key])
 
 block content
   h2= copy['from-audio-to-script']

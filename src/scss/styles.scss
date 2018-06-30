@@ -193,22 +193,22 @@ hr {
 }
 
 .boulibar-hero-mobile,
-.boulibar-hero-tablet,
-.boulibar-hero-desktop {
-  .container {
-    .content {
-      position: relative;
+.boulibar-hero-tablet {
+}
 
-      h1 {
-        &.title {
-          background-color: $charcoalGrey;
-          bottom: -30px;
-          padding: 10px 20px 0 20px;
-          position: absolute;
-          right: 0;
-        }
-      }
-    }
+.boulibar-hero-desktop {
+  display: flex;
+  flex-direction: column-reverse;
+  height: 492px;
+
+  h1 {
+    background-color: $charcoalGrey;
+    color: $putty;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: auto auto 0 auto;
+    padding: 1rem 0 0 50px;
+    width: 700px;
   }
 }
 
