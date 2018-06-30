@@ -37,22 +37,18 @@ mixin figure(alt, src)
   figure.is-2by3
     img(alt= alt heigth="381" src= src width="254")
 
-block content
+block hero
   +hero("/images/pages/about/34561279_s.jpg", copy['we-are-moving-on'])
-  .section
-    .container
-      .content
-        p= copy['about-content-1']
-        p= copy['about-content-2']
-        p.is-putty.is-serif.has-text-centered= copy['about-content-highlight']
-        hr
-        p= copy['about-content-3']
-        p= copy['about-content-4']
+
+block content
+  p= copy['about-content-1']
+  p= copy['about-content-2']
+  p.is-putty.is-serif.has-text-centered= copy['about-content-highlight']
+  hr
+  p= copy['about-content-3']
+  p= copy['about-content-4']
   include ../cta/quote
-  .section
-    .container
-      .content
-        +cardTouch(copy['lisa-smith'], "/images/pages/about/lisa-smith.png", copy['lisa-smith'], copy['founder'], copy['lisa-smith-bio'])
-        +cardTouch(copy['lisa-nelson'], "/images/pages/about/lisa-nelson.jpg", copy['lisa-nelson'], copy['operations-manager'], copy['lisa-nelson-bio'])
-        +cardDesktopLeft(copy['lisa-smith'], "/images/pages/about/lisa-smith.png", copy['lisa-smith'], copy['founder'], copy['lisa-smith-bio'])
-        +cardDesktopRight(copy['lisa-nelson'], "/images/pages/about/lisa-nelson.jpg", copy['lisa-nelson'], copy['operations-manager'], copy['lisa-nelson-bio'])
+  +cardTouch(copy['lisa-smith'], "/images/pages/about/lisa-smith.png", copy['lisa-smith'], copy['founder'], copy['lisa-smith-bio'])
+  +cardTouch(copy['lisa-nelson'], "/images/pages/about/lisa-nelson.jpg", copy['lisa-nelson'], copy['operations-manager'], copy['lisa-nelson-bio'])
+  +cardDesktopLeft(copy['lisa-smith'], "/images/pages/about/lisa-smith.png", copy['lisa-smith'], copy['founder'], copy['lisa-smith-bio'])
+  +cardDesktopRight(copy['lisa-nelson'], "/images/pages/about/lisa-nelson.jpg", copy['lisa-nelson'], copy['operations-manager'], copy['lisa-nelson-bio'])

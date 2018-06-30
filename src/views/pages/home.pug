@@ -1,33 +1,26 @@
 extends ../layout
 include ../components/figure
 
-block content
+block hero
   .section.hero.home
     .hero-body
       .container.has-text-centered
         +figure("/images/mobile/hero@3x.png", "/images/tablet/hero-img@3x.png", "/images/desktop/hero-img@2x.png")
         h1.title= copy['accurate-affordable-transcription']
         a.button.is-large(href="/order") !{copy['order']}
-  .section
-    .container
-      .content
-        p.is-putty.is-serif.has-text-centered= copy['home-content-1']
-        hr
-        p= copy['home-content-2']
-  .section
-    .container
-      .content
-        figure
-          img(src="https://bulma.io/images/placeholders/256x256.png")
-        h2= copy['turnaround-time']
-        p= copy['home-content-3']
+
+block content
+  p.is-putty.is-serif.has-text-centered= copy['home-content-1']
+  hr
+  p= copy['home-content-2']
+  figure
+    img(src="https://bulma.io/images/placeholders/256x256.png")
+  h2= copy['turnaround-time']
+  p= copy['home-content-3']
   include ../cta/quote
   include ../components/client-logos
-  .section
-    .container
-      .content
-        figure
-          img(src="https://bulma.io/images/placeholders/256x256.png")
-        h2= copy['translations-captioning-and-copy-editing']
-        p= copy['home-content-4']
+  figure
+    img(src="https://bulma.io/images/placeholders/256x256.png")
+  h2= copy['translations-captioning-and-copy-editing']
+  p= copy['home-content-4']
   include ../cta/learn-more

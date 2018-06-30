@@ -2,27 +2,17 @@ extends ../layout
 include ../components/hero
 include ../components/pdf
 
-block content
+block hero
   +hero("/images/pages/format/95180884_s.jpg", null)
-  .section
-    .container
-      .content
-        h2= copy['from-audio-to-script']
-        p= copy['format-content-1']
+
+block content
+  h2= copy['from-audio-to-script']
+  p= copy['format-content-1']
   include ../cta/order
-  .section
-    .container
-      .content
-        figure
-          img.image(src="/images/pages/format/40882394_s.jpg")
-        h2= copy['the-written-word']
-        p= copy['format-content-2']
-  .section
-    .container
-      .columns
-        .column
-          +pdf("/documents/Sample Transcript .pdf", copy['standard-timecoded-transcript'])
-        .column
-          +pdf("/documents/template_As Broadcast.pdf", copy['as-broadcast-transcript'])
-        .column
-          +pdf("/documents/template_audio.pdf", copy['standard-audio-transcript'])
+  figure
+    img.image(src="/images/pages/format/40882394_s.jpg")
+  h2= copy['the-written-word']
+  p= copy['format-content-2']
+  +pdf("/documents/Sample Transcript .pdf", copy['standard-timecoded-transcript'])
+  +pdf("/documents/template_As Broadcast.pdf", copy['as-broadcast-transcript'])
+  +pdf("/documents/template_audio.pdf", copy['standard-audio-transcript'])

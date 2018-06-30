@@ -2,37 +2,31 @@ extends ../layout
 include ../components/pdf
 
 block content
-  .section
-    .container
-      .content
-        h1= copy[page.key]
-  .section
-    .container
-      .content
-        figure
-          img(src="https://bulma.io/images/placeholders/256x256.png")
-        p= copy['payment-content-1']
-        h2= copy['check']
-        p= copy['payment-content-2']
-          address= copy['company-address']
-        h2= copy['credit-card-authorization-form']
-        p= copy['payment-content-3']
-        +pdf("/documents/MOP Credit card authorization form .pdf", copy['credit-card-authorization-form'])
-        if features.paypal
-          h2= copy['credit-and-debit-card']
-          p= copy['payment-content-4']
-          .notification#notification.is-hidden
-            button#notification-button.delete
-          form
-            .field
-              .control
-                label.label.is-serif= copy['client-name']
-                input#client-name.input
-            .field
-              .control
-                label.label.is-serif= copy['amount-paid']
-                input#amount-paid.input(type="number")
-            .field
-              .control
-                #paypal-button-container
-                script(src="javascripts/paypal.js")
+  h1= copy[page.key]
+  figure
+    img(src="https://bulma.io/images/placeholders/256x256.png")
+  p= copy['payment-content-1']
+  h2= copy['check']
+  p= copy['payment-content-2']
+    address= copy['company-address']
+  h2= copy['credit-card-authorization-form']
+  p= copy['payment-content-3']
+  +pdf("/documents/MOP Credit card authorization form .pdf", copy['credit-card-authorization-form'])
+  if features.paypal
+    h2= copy['credit-and-debit-card']
+    p= copy['payment-content-4']
+    .notification#notification.is-hidden
+      button#notification-button.delete
+    form
+      .field
+        .control
+          label.label.is-serif= copy['client-name']
+          input#client-name.input
+      .field
+        .control
+          label.label.is-serif= copy['amount-paid']
+          input#amount-paid.input(type="number")
+      .field
+        .control
+          #paypal-button-container
+          script(src="javascripts/paypal.js")

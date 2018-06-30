@@ -1,9 +1,10 @@
 mixin container(src, title)
-  .container
-    .content
-      img(src= src)
-      if (title !== null)
-        h1.title= title
+  .section
+    .container
+      .content
+        img(src= src)
+        if (title !== null)
+          h1.title= title
 
 mixin hero(src, title)
   .boulibar-hero-mobile.is-hidden-tablet

@@ -1,17 +1,8 @@
 extends ../layout
 
 block content
-  .section
-    .container
-      .content
-        h1= copy[page.key]
-  .section
-    .container
-      .content
-        h2= copy['get-a-quote']
-        p= copy['quote-content-1']
-  .section
-    .container
-      .content
-        #root
-        script(src= appPath)
+  h1= copy[page.key]
+  h2= copy['get-a-quote']
+  p= copy['quote-content-1']
+  #root
+  script(src= appPath)

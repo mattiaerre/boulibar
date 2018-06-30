@@ -1,34 +1,19 @@
 extends ../layout
 
 block content
-  .section
-    .container
-      .content
-        h1= copy[page.key]
-  .section
-    .container
-      .content
-        h2= copy['phone']
-        p
-          div= copy['los-angeles-office']
-            a(href="tel:+1-323-540-4285") +1 (323) 540-4285
-          div= copy['new-york-office']
-            a(href="tel:+1-646-234-5167") +1 (646) 234-5167
-  .section
-    .container
-      .content
-        h2= copy['email']
-        p= copy['contact-content-1']
-          a.is-foam-blue(href="mailto:info@movingonproductions.com") info@movingonproductions.com
-  .section
-    .container
-      .content
-        h2= copy['form']
-        #root
-        script(src= appPath)
-  .section
-    .container
-      .content
-        h2= copy['address']
-        p= copy['moving-on-productions']
-          address= copy['company-address']
+  h1= copy[page.key]
+  h2= copy['phone']
+  p
+    div= copy['los-angeles-office']
+      a(href="tel:+1-323-540-4285") +1 (323) 540-4285
+    div= copy['new-york-office']
+      a(href="tel:+1-646-234-5167") +1 (646) 234-5167
+  h2= copy['email']
+  p= copy['contact-content-1']
+    a.is-foam-blue(href="mailto:info@movingonproductions.com") info@movingonproductions.com
+  h2= copy['form']
+  #root
+  script(src= appPath)
+  h2= copy['address']
+  p= copy['moving-on-productions']
+    address= copy['company-address']

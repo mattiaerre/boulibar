@@ -30,16 +30,15 @@ mixin column(key)
     if(key !== null)
       img.client-logo(src=`/images/client-logos/${key}/logo-copy@3x.png`)
 
-.section
-  .container.is-hidden-tablet
-    each index in [0, 2, 4, 6, 8, 10, 12, 14, 16]
-      .columns.is-mobile
-        +column(data[index])
-        +column(data[index + 1])
-  .container.is-hidden-mobile
-    each index in [0, 4, 8, 12, 16]
-      .columns
-        +column(data[index])
-        +column(data[index + 1])
-        +column(data[index + 2])
-        +column(data[index + 3])
+.is-hidden-tablet
+  each index in [0, 2, 4, 6, 8, 10, 12, 14, 16]
+    .columns.is-mobile
+      +column(data[index])
+      +column(data[index + 1])
+.is-hidden-mobile
+  each index in [0, 4, 8, 12, 16]
+    .columns
+      +column(data[index])
+      +column(data[index + 1])
+      +column(data[index + 2])
+      +column(data[index + 3])

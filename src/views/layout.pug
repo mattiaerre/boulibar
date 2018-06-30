@@ -21,7 +21,11 @@ html(lang="en")
     link(rel='stylesheet', href=`${stylesheet}/styles.css`)
   body.has-navbar-fixed-top
     include components/navbar
-    block content
+    block hero
+    .section
+      .container
+        .content.boulibar-content
+          block content
     footer
       include components/footer
     script(src="javascripts/index.js")
