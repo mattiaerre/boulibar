@@ -11,6 +11,7 @@ $cement: #9b9994;
 $charcoalGrey: #2d343a;
 $darkTaupe: #726442;
 $lightGrey: #f2efe6;
+$ocean: #00818a;
 $putty: #bcb38e;
 $seafoamBlue: #74b3ce;
 // bulma colors
@@ -63,7 +64,7 @@ footer {
   margin: 1rem 1rem 0 1rem;
 
   a {
-    color: $charcoalGrey;
+    color: $charcoalGrey !important;
   }
 
   i {
