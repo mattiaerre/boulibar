@@ -114,10 +114,11 @@
   "services-content-1":
     "Whether you're a PhD student writing a thesis, a filmmaker with a documentary to produce, an author writing a new book, a marketing strategist with audio from focus groups, or a non-scripted television show, we can take your audio and turn it into the written word. We will accept any audio or video format and create custom transcripts to your unique specifications: with or without time code, magazine style, or verbatim.",
   "services-content-2":
-    "Need a translation? We do that too. Whether it's Spanish to English, Turkish, Swedish or Swahili and so on ... We can provide translation and transcription for reasonable rates and with just as much ease as our simple transcription projects. Our translators reside internationally and are translating and transcribing from their native tongue to English. We can accomodate any language.",
+    "Need a translation?  We do that, too. Whether it's Spanish to English, Turkish, Swedish or Swahili and so on, we can provide translation and transcription for reasonable rates, providing the same ease as our simple transcription projects. Our translators reside internationally and are translating and transcribing from their native tongue to English. We can accomodate most languages.",
   "services-content-3":
-    "Specs for closed captioning and which software we use.",
-  "services-content-4": "Copy Editing & Proofreading",
+    "Whether it's captioning for the hearing impaired or subtitles for another language, we offer accurate production ready transcripts, with translation, for closed captioning. We can also provide video captions for you that are YouTube and FCPX compatible.",
+  "services-content-4":
+    "We offer content writing, copyediting and proofreading services. We can draft content for digital marketing and sales, including ad copy, websites and social media. We also provide proofreading for brochures, direct mail, professional emails, resumes, cover letters or social profiles. Our team is made up of highly skilled, well educated writers, who are passionate about communication tools and the written word.",
   "standard": "Standard (3-5 business days)",
   "standard-audio-transcript": "Standard Audio Transcript",
   "standard-timecoded-transcript": "Standard Timecoded Transcript",
@@ -142,6 +143,7 @@
   "USD": "$",
   "verbatim": "Verbatim",
   "we-are-moving-on": "We are Moving On",
+  "what-we-do": "What We Do",
   "writing-services": "Writing Services",
   "yes": "Yes"
 }
