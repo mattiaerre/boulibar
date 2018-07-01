@@ -229,6 +229,9 @@ hr {
 }
 
 .boulibar-h1 {
+  @include until($desktop) {
+    margin-top: 1rem !important;
+  }
   @include from($desktop) {
     font-size: 2.6rem !important;
     font-weight: bold !important;
