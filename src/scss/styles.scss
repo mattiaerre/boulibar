@@ -62,7 +62,12 @@ figure.is-2by3 {
 
 footer {
   font-family: $family-serif;
-  margin: 1rem 1rem 0 1rem;
+  @include until($desktop) {
+    margin: 3rem 1rem 0 1rem;
+  }
+  @include from($desktop) {
+    margin: 1rem 1rem 0 1rem;
+  }
 
   a {
     color: $charcoalGrey !important;
@@ -224,8 +229,10 @@ hr {
 }
 
 .boulibar-h1 {
-  font-size: 2.6rem !important;
-  font-weight: bold !important;
+  @include from($desktop) {
+    font-size: 2.6rem !important;
+    font-weight: bold !important;
+  }
 }
 
 .boulibar-is-white {
@@ -234,4 +241,11 @@ hr {
 
 .has-margin-auto {
   margin: auto;
+}
+
+.section {
+  @include until($desktop) {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
 }

@@ -40,7 +40,7 @@
   "form": "Form",
   "format": "Format",
   "format-content-1":
-    "If you have audio, in any format, we can transcribe it for you. We'll take archaic technology off your hands and turn it into the written word. Need an audio cassette transcribed? Believe it or not, we can do that! We accept all forms of Wav, MP3 and MP4 files. We'll take any digital video format as well. We provide immediate upload through this site.",
+    "If you have audio or video files, in any format, we can transcribe it for you. We can even take archaic technology off your hands and turn it into the written word. We accept all forms of Wav, MP3 and MP4 files and provide immediate upload through hightail or dropbox for your privacy and ease of use.",
   "format-content-2":
     "What do you want your transcript to look like? You tell us. We offer our clients full customization including time code placed at the frequency you require. Whether you need the transcript clean or verbatim and the copy being as broadcast or script style. Let us know the format of the final transcript that you prefer and we'll make it happen.",
   "founder": "Founder",
@@ -142,8 +142,10 @@
   "upload": "Upload &rarr;",
   "USD": "$",
   "verbatim": "Verbatim",
-  "we-are-moving-on": "We are Moving On",
+  "we-are-moving-on": "We Are Moving On",
+  "what-we-can-handle": "What We Can Handle",
   "what-we-do": "What We Do",
+  "who-we-are": "Who We Are",
   "writing-services": "Writing Services",
   "yes": "Yes"
 }
