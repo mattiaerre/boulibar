@@ -48,6 +48,7 @@ h4 {
   font-family: $family-serif;
 }
 
+h1,
 h2,
 h3 {
   color: $putty !important;
@@ -94,7 +95,12 @@ footer {
 
 hr {
   background-color: $seafoamBlue;
-  margin: 1.5rem 4rem;
+  @include until($desktop) {
+    margin: 1.5rem 4rem;
+  }
+  @include from($desktop) {
+    margin: 1.5rem 10rem;
+  }
 }
 
 .button {
@@ -215,6 +221,11 @@ hr {
 .boulibar-content {
   margin: auto;
   max-width: 600px !important;
+}
+
+.boulibar-h1 {
+  font-size: 3rem !important;
+  font-weight: bold !important;
 }
 
 .has-margin-auto {

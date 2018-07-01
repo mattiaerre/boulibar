@@ -2,22 +2,18 @@ extends ../layout
 include ../components/hero
 
 mixin cardDesktopLeft(alt, src, h3, h4, bio)
-  .card.is-hidden-touch
-    .card-content
-      .media
-        .media-left
-          +figure(alt, src)
-        .media-content
-          +content(h3, h4, bio)
+  .columns.is-hidden-touch
+    .column(style="margin: auto;")
+      +figure(alt, src)
+    .column
+      +content(h3, h4, bio)
 
 mixin cardDesktopRight(alt, src, h3, h4, bio)
-  .card.is-hidden-touch
-    .card-content
-      .media
-        .media-content.has-text-right
-          +content(h3, h4, bio)
-        .media-right
-          +figure(alt, src)
+  .columns.is-hidden-touch
+    .column.has-text-right
+      +content(h3, h4, bio)
+    .column(style="margin: auto;")
+      +figure(alt, src)
 
 mixin cardTouch(alt, src, h3, h4, bio)
   .card.is-hidden-desktop

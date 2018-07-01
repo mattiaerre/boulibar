@@ -1,8 +1,7 @@
 extends ../layout
 
 block content
-  h1= copy[page.key]
-  h2= copy['get-a-quote']
+  h1.has-text-centered.boulibar-h1= copy['get-a-quote']
   p= copy['quote-content-1']
   #root
   script(src= appPath)

@@ -1,10 +1,11 @@
 extends ../layout
+include ../components/hero
 include ../components/pdf
 
+block hero
+  +hero("/images/pages/payment/ramiro-mendes-371663-unsplash_s.jpg", copy[page.key])
+
 block content
-  h1= copy[page.key]
-  figure
-    img(src="https://bulma.io/images/placeholders/256x256.png")
   p= copy['payment-content-1']
   h2= copy['check']
   p= copy['payment-content-2']
