@@ -242,6 +242,12 @@ hr {
   color: white !important;
 }
 
+.boulibar-p {
+  @include from($desktop) {
+    font-size: 1.25rem;
+  }
+}
+
 .has-margin-auto {
   margin: auto;
 }
