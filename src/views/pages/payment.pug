@@ -13,5 +13,6 @@ block content
   h2= copy['credit-card-authorization-form']
   p= copy['payment-content-3']
   +pdf("/documents/MOP Credit card authorization form .pdf", copy['credit-card-authorization-form'])
-  #root
-  script(src= appPath)
+  if features.paypal
+    #root
+    script(src= appPath)
