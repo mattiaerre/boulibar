@@ -7,11 +7,10 @@ mixin heroBody(src)
         figure
           img(src= src)
         h1.title.boulibar-is-white
-          | Accurate
-          | Affordable
+          | !{copy['accurate-affordable']}
           br
-          | Transcription
-        a.button.is-large(href="/order") !{copy['order']}
+          | !{copy['transcription']}
+        a.boulibar-hero-home-button.button.is-large.is-uppercase(href="/order") !{copy['order']}
 
 mixin heroHome(mobile, tablet, desktop)
   .boulibar-hero-home-mobile.is-hidden-tablet

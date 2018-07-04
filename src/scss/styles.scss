@@ -194,13 +194,21 @@ hr {
   a.button.is-large {
     font-size: 2rem;
     margin-left: -90px;
-    top: 70%;
+    top: 62%;
     width: 180px;
   }
   h1 {
     font-size: 2.6rem;
     top: 30%;
   }
+}
+
+.boulibar-hero-home-button {
+  background-color: rgba(188, 179, 142, 0.7);
+  border-color: #2d343a;
+  color: #2d343a !important;
+  font-weight: bold;
+  height: 60px !important;
 }
 
 .boulibar-hero-mobile,
