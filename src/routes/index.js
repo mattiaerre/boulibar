@@ -13,7 +13,7 @@ function handler(req, res, page) {
     appPath: process.env.APP_PATH,
     copy,
     features: {
-      paypal: !isProd()
+      paypal: true
     },
     name,
     page,
