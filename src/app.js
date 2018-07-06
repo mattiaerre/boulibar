@@ -53,8 +53,23 @@ app.use((req, res, next) => {
 app.use('/', index);
 app.use('/submit', submit);
 
-app.use((req, res, next) => {
-  next(createError(404));
+app.use((req, res) => {
+  const routes = [
+    { from: '/site/transcription/information', to: '/about' },
+    { from: '/site/transcription/about', to: '/about' },
+    { from: '/site/contact/information', to: '/contact' },
+    { from: '/site/transcription/rates', to: '/quote' },
+    { from: '/site/transcription/clients', to: '/' },
+    { from: '/site/transcription/formats', to: '/format' },
+    { from: '/site/transcription/payment', to: '/payment' }
+  ];
+  let url = '/';
+  routes.forEach(({ from, to }) => {
+    if (from === req.path) {
+      url = to;
+    }
+  });
+  res.redirect(url);
 });
 
 app.use((err, req, res) => {

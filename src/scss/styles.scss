@@ -1,7 +1,7 @@
 // /Users/mrichetto/projects/boulibar/node_modules/bulma/sass/utilities/initial-variables.sass
 
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900');
 
 $family-serif: 'Playfair Display', serif;
 $family-sans-serif: 'Source Sans Pro', sans-serif;
@@ -52,6 +52,10 @@ h1,
 h2,
 h3 {
   color: $putty !important;
+}
+
+h1 {
+  font-weight: 900;
 }
 
 figure.is-2by3 {
