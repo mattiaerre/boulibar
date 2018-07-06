@@ -75,6 +75,7 @@ footer {
 
   a {
     color: $charcoalGrey !important;
+    font-weight: 900 !important;
   }
 
   i {
@@ -84,6 +85,7 @@ footer {
   li {
     border: 1px solid $darkTaupe;
     border-radius: 50%;
+    box-shadow: 0 10px 18px 0 rgba(188, 179, 142, 0.4);
     padding: 0.45rem;
   }
 
