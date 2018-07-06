@@ -2,7 +2,7 @@ const cookieParser = require('cookie-parser');
 require('dotenv').config();
 const express = require('express');
 const favicon = require('express-favicon-short-circuit');
-const createError = require('http-errors');
+// const createError = require('http-errors');
 const logger = require('morgan');
 const sassMiddleware = require('node-sass-middleware');
 const path = require('path');
@@ -54,22 +54,19 @@ app.use('/', index);
 app.use('/submit', submit);
 
 app.use((req, res) => {
-  const routes = [
-    { from: '/site/transcription/information', to: '/about' },
-    { from: '/site/transcription/about', to: '/about' },
+  [
     { from: '/site/contact/information', to: '/contact' },
-    { from: '/site/transcription/rates', to: '/quote' },
-    { from: '/site/transcription/clients', to: '/' },
+    { from: '/site/transcription/about', to: '/about' },
     { from: '/site/transcription/formats', to: '/format' },
-    { from: '/site/transcription/payment', to: '/payment' }
-  ];
-  let url = '/';
-  routes.forEach(({ from, to }) => {
+    { from: '/site/transcription/information', to: '/about' },
+    { from: '/site/transcription/payment', to: '/payment' },
+    { from: '/site/transcription/rates', to: '/quote' }
+  ].forEach(({ from, to }) => {
     if (from === req.path) {
-      url = to;
+      res.redirect(to);
     }
   });
-  res.redirect(url);
+  res.redirect('/');
 });
 
 app.use((err, req, res) => {
