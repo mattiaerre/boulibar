@@ -8,6 +8,8 @@ boulibar
 
 - `npm run copy:styles`
 
+- `npm run copy:styles.v1`
+
 ## PayPal resources
 
 - https://developer.paypal.com/

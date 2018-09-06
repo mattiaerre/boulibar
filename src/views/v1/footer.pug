@@ -1,0 +1,20 @@
+footer
+  a(href="/")
+    img.logo(src="images/logo-light.svg")
+  ul.other-pages
+    each key in ['quote', 'order', 'payment', 'contact']
+      li
+        a(href=`/${key}`)= copy[key]
+  ul
+    li.social
+      a(href="https://www.linkedin.com/company/moving-on-productions-llc" target="_blank")
+        span
+          i.fab.fa-linkedin-in
+    li.social
+      a(href="https://twitter.com/MovingOnProd" target="_blank")
+        span
+          i.fab.fa-twitter
+    li.social
+      a(href="https://www.facebook.com/movingontranscription" target="_blank")
+        span
+          i.fab.fa-facebook-f

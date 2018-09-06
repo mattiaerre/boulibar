@@ -1,0 +1,24 @@
+extends ../layout
+
+block content
+  section
+    .hero
+      figure
+        img.mobile.responsive(src="/images/mobile/hero@2x.png")
+        img.desktop.responsive(src="/images/desktop/hero-img@2x.png")
+      h1
+        | !{copy['accurate-affordable']}
+        br
+        | !{copy['transcription']}
+      a(href="/order") !{copy['order']}
+    p.there-are-some= copy['home-content-1']
+    p.we-can-use= copy['home-content-2']
+    article.turnaround-time
+      h2= copy['turnaround-time']
+      p.we-understand-that= copy['home-content-3']
+      a(href="/quote") !{copy['quote-rarr']}
+    include client-logos
+    article.translations-captioning-and-copy-editing
+      h2= copy['translations-captioning-and-copy-editing']
+      p.in-addition-to= copy['home-content-4']
+      a(href="/services") !{copy['learn-more']}

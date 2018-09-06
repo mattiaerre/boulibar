@@ -1,0 +1,7 @@
+nav
+  a(href="/")
+    img.logo(src="images/logo-dark.svg")
+  ul
+    each key in ['about', 'format', 'services', 'contact']
+      li
+        a(href=`/${key}`)= copy[key]

@@ -8,7 +8,9 @@ const siteMap = require('./site-map.json');
 const router = express.Router();
 
 function handler(req, res, page) {
-  const stylesheet = `${isProd() ? 'stylesheets' : ''}`;
+  const v1 = process.env.V1 === 'true' || req.query.v1 === 'true' ? 'v1' : '.';
+  const stylesheet = `${isProd() ? `stylesheets/${v1}` : `${v1}`}`;
+  const views = `${v1}/pages/${page.key}`;
   const model = {
     appPath: process.env.APP_PATH,
     copy,
@@ -29,7 +31,7 @@ function handler(req, res, page) {
     version
   };
   debug(model);
-  res.render(`pages/${page.key}`, model);
+  res.render(views, model);
 }
 
 Object.keys(siteMap)
