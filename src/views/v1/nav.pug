@@ -1,7 +1,10 @@
 nav
   a(href="/")
     img.logo(src="images/logo-dark.svg")
-  ul
+  a(href="#" class="navbar-burger" data-target="navbar-menu")
+    span(class="burger") &#9776;
+    span(class="times") &#10005;
+  ul#navbar-menu
     each key in ['about', 'format', 'services', 'contact']
       li
-        a(href=`/${key}`)= copy[key]
+        a(href=`/${key}` class=`${page.path === key ? 'is-active' : ''}`)= copy[key]

@@ -1,11 +1,17 @@
 @import 'colors';
 
 @media only screen and (min-width: 1024px) {
+  body {
+    margin: 0 16px;
+  }
+
   footer {
     margin: auto;
     max-width: 1224px;
 
     ul {
+      display: flex;
+
       &.other-pages {
         flex-direction: row;
       }
@@ -24,7 +30,9 @@
     max-width: 1224px;
 
     ul {
+      display: flex;
       align-items: center;
+      flex-direction: row;
 
       li {
         margin-left: $spacing-medium;
@@ -46,21 +54,24 @@
     margin: auto;
     max-width: 1224px;
 
+    ul {
+      &.client-logos {
+        margin: 0 0 32px 392px;
+        max-width: 600px;
+      }
+    }
+
     .hero {
       a {
-        font-size: 22px;
-        font-weight: bold;
-        height: 60px;
+        margin: auto;
         position: absolute;
-        top: 500px;
-        width: 180px;
+        top: 400px;
       }
 
       h1 {
-        font-size: 60px;
-        font-weight: 900;
+        margin: auto;
         position: absolute;
-        top: 300px;
+        top: 280px;
       }
     }
   }
