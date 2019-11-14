@@ -272,3 +272,36 @@ hr {
     padding-top: 0;
   }
 }
+
+.Hero__Title {
+  @include from($desktop) {
+    font-size: 3rem !important;
+    margin-top: 12rem !important;
+  }
+}
+
+.NavBar__List {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 6rem;
+}
+
+.NavBar__PhoneNumber {
+  color: $seafoamBlue;
+  font-size: 1.25rem;
+}
+
+.NavBar__Quote {
+  @include from($desktop) {
+    background-color: $putty !important;
+    color: $charcoalGrey !important;
+  }
+}
+
+.NavBar__Quote:hover {
+  @include from($desktop) {
+    border-color: #b5b5b5;
+  }
+}

@@ -9,3 +9,10 @@
     .navbar-start
       each key in ['about', 'format', 'services', 'contact']
         a.navbar-item.is-serif(href=`/${key}` class=`${page.path === key ? 'is-active' : ''}`)= copy[key]
+      a.is-hidden-tablet.navbar-item.is-serif(href=`/quote` class=`${page.path === 'quote' ? 'is-active' : ''}`)= copy['quote']
+    .navbar-end.is-hidden-mobile
+      ul.NavBar__List
+        li
+          a.NavBar__Quote.navbar-item.is-serif(href=`/quote`)= copy['get-a-quote']
+        li
+          span.NavBar__PhoneNumber (323) 540-4285
