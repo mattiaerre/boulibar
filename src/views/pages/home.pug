@@ -6,11 +6,11 @@ mixin heroBody(src)
       .content.has-text-centered
         figure
           img(src= src)
-        h1.title.boulibar-is-white
+        h1.title.boulibar-is-white.Hero__Title
           | !{copy['accurate-affordable']}
           br
           | !{copy['transcription']}
-        a.boulibar-hero-home-button.button.is-large.is-uppercase(href="/order") !{copy['order']}
+        a.is-hidden-tablet.boulibar-hero-home-button.button.is-large.is-uppercase(href="/order") !{copy['order']}
 
 mixin heroHome(mobile, tablet, desktop)
   .boulibar-hero-home-mobile.is-hidden-tablet
@@ -21,7 +21,7 @@ mixin heroHome(mobile, tablet, desktop)
     +heroBody(desktop)
 
 block hero
-  +heroHome("/images/mobile/hero@3x.png", "/images/tablet/hero-img@3x.png", "/images/desktop/hero-img@2x.png")
+  +heroHome("/images/mobile/hero@3x.png", "/images/tablet/hero-img@3x.png", "/images/tablet/hero-img@3x.png")
 
 block content
   p.is-putty.is-serif.has-text-centered.boulibar-p= copy['home-content-1']
