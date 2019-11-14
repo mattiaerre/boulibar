@@ -301,7 +301,7 @@ hr {
 }
 
 .NavBar__Quote:hover {
-  @include from ($desktop) {
+  @include from($desktop) {
     border-color: #b5b5b5;
   }
 }
