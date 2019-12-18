@@ -19,10 +19,13 @@ module.exports = async (mailOptions, callback) => {
       };
     } else {
       transport = {
-        service: 'gmail',
+        host: 'smtp.mailgun.org',
+        port: 587,
+        secure: false, // true for 465, false for other ports
         auth: {
-          user: process.env.GMAIL_USER,
-          pass: process.env.GMAIL_PASS
+          user:
+            'postmaster@sandbox1d7102732dc648a9a086afd0f5a5b191.mailgun.org',
+          pass: '177e279f576c02c56b2c86e332509588-f8b3d330-981616ac'
         }
       };
     }
@@ -32,6 +35,7 @@ module.exports = async (mailOptions, callback) => {
 
     return callback(
       null,
+      // eslint-disable-next-line prefer-object-spread
       Object.assign({}, info, {
         previewUrl: nodemailer.getTestMessageUrl(info)
       })
