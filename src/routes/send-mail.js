@@ -25,7 +25,7 @@ module.exports = async (mailOptions, callback) => {
         auth: {
           user:
             'postmaster@sandbox1d7102732dc648a9a086afd0f5a5b191.mailgun.org',
-          pass: '177e279f576c02c56b2c86e332509588-f8b3d330-981616ac'
+          pass: '2576e5f752daba8e1be0d034cca4cc4f-f8b3d330-d4d86f0c'
         }
       };
     }
