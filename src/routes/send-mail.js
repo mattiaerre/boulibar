@@ -2,6 +2,8 @@ const nodemailer = require('nodemailer');
 const isProd = require('../is-prod');
 // https://medium.com/@manojsinghnegi/sending-an-email-using-nodemailer-gmail-7cfa0712a799
 
+const { MAILGUN_PASS, MAILGUN_USER } = process.env;
+
 module.exports = async (mailOptions, callback) => {
   try {
     let transport;
@@ -23,9 +25,8 @@ module.exports = async (mailOptions, callback) => {
         port: 587,
         secure: false, // true for 465, false for other ports
         auth: {
-          user:
-            'postmaster@sandbox1d7102732dc648a9a086afd0f5a5b191.mailgun.org',
-          pass: '2576e5f752daba8e1be0d034cca4cc4f-f8b3d330-d4d86f0c'
+          user: MAILGUN_USER,
+          pass: MAILGUN_PASS
         }
       };
     }
