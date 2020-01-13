@@ -21,7 +21,7 @@ module.exports = async (mailOptions, callback) => {
       };
     } else {
       transport = {
-        host: 'email-smtp.us-east-1.amazonaws.com',
+        host: 'email-smtp.us-west-2.amazonaws.com',
         port: 465,
         secure: true, // true for 465, false for other ports
         auth: {
