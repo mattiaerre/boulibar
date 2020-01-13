@@ -34,13 +34,10 @@ module.exports = async (mailOptions, callback) => {
 
     const info = await transporter.sendMail(mailOptions);
 
-    return callback(
-      null,
-      // eslint-disable-next-line prefer-object-spread
-      Object.assign({}, info, {
-        previewUrl: nodemailer.getTestMessageUrl(info)
-      })
-    );
+    return callback(null, {
+      ...info,
+      previewUrl: nodemailer.getTestMessageUrl(info)
+    });
   } catch (error) {
     return callback(error);
   }
