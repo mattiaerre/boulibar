@@ -37,7 +37,7 @@ router.post('/', (req, res) => {
     .tz('America/New_York')
     .format();
   const mailOptions = {
-    from: data.email,
+    from: emails.info,
     to: emails.info,
     subject: `${copy['moving-on-productions']} v${version} - ${copy[data.key]}`,
     text: textTemplate(data),
@@ -47,9 +47,9 @@ router.post('/', (req, res) => {
     const model = { data, message: `${name} v${version}` };
     if (error) {
       debug(error);
-      return res.json(Object.assign({}, model, { error }));
+      return res.json({ ...model, error });
     }
-    return res.json(Object.assign({}, model, { info }));
+    return res.json({ ...model, info });
   });
 });
 
