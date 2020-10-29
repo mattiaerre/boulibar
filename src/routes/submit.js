@@ -26,16 +26,14 @@ const to = data => {
 };
 */
 
-const textTemplate = data =>
+const textTemplate = (data) =>
   Object.keys(data)
-    .map(key => `${key}: ${data[key]}`)
+    .map((key) => `${key}: ${data[key]}`)
     .join('\n');
 
 router.post('/', (req, res) => {
   const { data } = req.body;
-  data['date-time'] = moment()
-    .tz('America/New_York')
-    .format();
+  data['date-time'] = moment().tz('America/New_York').format();
   const mailOptions = {
     from: emails.info,
     to: emails.info,

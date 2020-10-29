@@ -1,26 +1,66 @@
 {
   "about": {
+    "link": { "canonical": "https://www.movingonproductions.com/about" },
+    "meta": {
+      "description": "about page meta description",
+      "title": "Who We Are"
+    },
     "path": "about"
   },
   "contact": {
+    "link": { "canonical": "https://www.movingonproductions.com/contact" },
+    "meta": {
+      "description": "contact page meta description",
+      "title": "Keep In Touch"
+    },
     "path": "contact"
   },
   "format": {
+    "link": { "canonical": "https://www.movingonproductions.com/format" },
+    "meta": {
+      "description": "format page meta description",
+      "title": "What We Can Handle"
+    },
     "path": "format"
   },
   "home": {
+    "link": { "canonical": "https://www.movingonproductions.com/" },
+    "meta": {
+      "description": "home page meta description",
+      "title": "Accurate Affordable Transcription"
+    },
     "path": ""
   },
   "order": {
+    "link": { "canonical": "https://www.movingonproductions.com/order" },
+    "meta": {
+      "description": "order page meta description",
+      "title": "Let's Get Started"
+    },
     "path": "order"
   },
   "payment": {
+    "link": { "canonical": "https://www.movingonproductions.com/payment" },
+    "meta": {
+      "description": "payment page meta description",
+      "title": "Payment"
+    },
     "path": "payment"
   },
   "quote": {
+    "link": { "canonical": "https://www.movingonproductions.com/quote" },
+    "meta": {
+      "description": "quote page meta description",
+      "title": "Get a Quote"
+    },
     "path": "quote"
   },
   "services": {
+    "link": { "canonical": "https://www.movingonproductions.com/services" },
+    "meta": {
+      "description": "services page meta description",
+      "title": "What We Do"
+    },
     "path": "services"
   }
 }
