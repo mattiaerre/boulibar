@@ -5,7 +5,7 @@ mixin heroBody(src)
     .container
       .content.has-text-centered
         figure
-          img(src= src)
+          img(alt="figure" src= src)
         h1.title.boulibar-is-white.Hero__Title
           | !{copy['accurate-affordable']}
           br
@@ -28,7 +28,7 @@ block content
   hr
   p= copy['home-content-2']
   figure.is-marginless
-    img.image(src="/images/pages/home/brooke-campbell-44085-unsplash.jpg")
+    img.image(alt="figure" src="/images/pages/home/brooke-campbell-44085-unsplash.jpg")
   h2= copy['turnaround-time']
   p= copy['home-content-3']
   include ../cta/quote
@@ -36,7 +36,7 @@ block content
   .columns
     .column
       figure.is-marginless
-        img(src="/images/pages/home/fancycrave-440148-unsplash.jpg")
+        img(alt="figure" src="/images/pages/home/fancycrave-440148-unsplash.jpg")
     .column.is-one-third
       h2= copy['translations-captioning-and-copy-editing']
       p= copy['home-content-4']
@@ -45,4 +45,4 @@ block content
       include ../cta/learn-more
     .column
       figure.is-marginless
-        img.image(src="/images/pages/home/77140675_s.jpg")
+        img.image(alt="figure" src="/images/pages/home/77140675_s.jpg")
