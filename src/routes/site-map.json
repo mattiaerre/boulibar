@@ -1,26 +1,66 @@
 {
   "about": {
+    "link": { "canonical": "https://www.movingonproductions.com/about" },
+    "meta": {
+      "description": "17 years of providing transcripts for companies including Showtime, Bloomberg TV, National Geographic, Netflix, and Food Network.",
+      "title": "Who We Are"
+    },
     "path": "about"
   },
   "contact": {
+    "link": { "canonical": "https://www.movingonproductions.com/contact" },
+    "meta": {
+      "description": "Reach out to us via phone, email or mail.",
+      "title": "Keep In Touch"
+    },
     "path": "contact"
   },
   "format": {
+    "link": { "canonical": "https://www.movingonproductions.com/format" },
+    "meta": {
+      "description": "Verbatim, time-coded, as broadcast and post-production transcripts.",
+      "title": "What We Can Handle"
+    },
     "path": "format"
   },
   "home": {
+    "link": { "canonical": "https://www.movingonproductions.com/" },
+    "meta": {
+      "description": "Audio to script transcription services for reality TV, documentary film, ghostwriters, conference calls, focus groups, and corporate videos.",
+      "title": "Accurate Affordable Transcription"
+    },
     "path": ""
   },
   "order": {
+    "link": { "canonical": "https://www.movingonproductions.com/order" },
+    "meta": {
+      "description": "Use this link to upload all audio or video media. You'll receive confirmation upon receipt.",
+      "title": "Let's Get Started"
+    },
     "path": "order"
   },
   "payment": {
+    "link": { "canonical": "https://www.movingonproductions.com/payment" },
+    "meta": {
+      "description": "Payments can be made via PayPal, Credit or debit card.",
+      "title": "Payment"
+    },
     "path": "payment"
   },
   "quote": {
+    "link": { "canonical": "https://www.movingonproductions.com/quote" },
+    "meta": {
+      "description": "Tell us what you need, and we'll get right back to you with the cost breakdown and expected turnaround time.",
+      "title": "Get a Quote"
+    },
     "path": "quote"
   },
   "services": {
+    "link": { "canonical": "https://www.movingonproductions.com/services" },
+    "meta": {
+      "description": "We provide audio to text transcription, YouTube captioning, and content writing and copyediting.",
+      "title": "What We Do"
+    },
     "path": "services"
   }
 }

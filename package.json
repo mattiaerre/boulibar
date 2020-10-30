@@ -1,15 +1,18 @@
 {
   "name": "boulibar",
-  "version": "1.4.0",
+  "version": "1.5.8",
   "private": true,
   "scripts": {
     "copy:bundle": "cp ../boulibar-app/build/static/js/*.* src/public/javascripts",
     "copy:styles": "cp src/scss/*.css src/public/stylesheets && cp src/scss/*.css.map src/public/stylesheets",
+    "prettier": "prettier '**/*.{js,json}'",
+    "prettier:fix": "npm run prettier -- --write",
     "start": "node ./src/bin/www",
     "start:dev": "DEBUG=boulibar:* PORT=9000 nodemon ./src/bin/www"
   },
   "dependencies": {
     "bulma": "^0.8.0",
+    "compression": "^1.7.4",
     "cookie-parser": "^1.4.4",
     "debug": "^4.1.1",
     "dotenv": "^8.2.0",
@@ -33,7 +36,8 @@
     "eslint-plugin-react": "^7.16.0",
     "nodemon": "^1.19.4",
     "post-commit": "0.0.1",
-    "pre-commit": "^1.2.2"
+    "pre-commit": "^1.2.2",
+    "prettier": "^2.1.2"
   },
   "repository": {
     "type": "git",

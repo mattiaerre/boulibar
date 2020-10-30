@@ -33,10 +33,10 @@ function handler(req, res, page) {
 }
 
 Object.keys(siteMap)
-  .map(key => siteMap[key])
-  .forEach(page => {
+  .map((key) => siteMap[key])
+  .forEach((page) => {
     router.get(`/${page.path}`, (req, res) =>
-      handler(req, res, Object.assign({}, page, { key: page.path || 'home' }))
+      handler(req, res, { ...page, key: page.path || 'home' })
     );
   });
 

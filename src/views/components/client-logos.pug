@@ -28,7 +28,7 @@ mixin columns(keys)
 mixin column(key)
   .column.has-text-centered
     if(key !== null)
-      img.client-logo(src=`/images/client-logos/${key}/logo-copy@3x.png`)
+      img.client-logo(alt= key height="120" src=`/images/client-logos/${key}/logo-copy@3x.png` width="120")
 
 .is-hidden-tablet
   each index in [0, 2, 4, 6, 8, 10, 12, 14, 16]

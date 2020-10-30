@@ -1,4 +1,5 @@
 const cookieParser = require('cookie-parser');
+const compression = require('compression');
 require('dotenv').config();
 const express = require('express');
 const logger = require('morgan');
@@ -14,6 +15,7 @@ const app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
+app.use(compression());
 app.use(favicon(path.join(__dirname, 'public/images', 'favicon.ico')));
 app.use(logger('dev'));
 app.use(express.json());
